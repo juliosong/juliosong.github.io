@@ -1,0 +1,107 @@
+body {
+	font-family: "PT Serif", "Noto Serif", Enriqueta, Georgia, "Times New Roman", 'serif';
+	background-color: beige;
+	width: 80%;
+	margin: 25px auto;
+	line-height: 1.4em;
+    }
+
+h1 {
+	font-size: 1.8em;
+}
+
+h2 {
+	font-size: 1.2em;
+}
+
+.uni {
+	font-style: oblique;
+	font-weight: 500;
+}
+
+.profile-pic {
+	grid-area: profile-pic;
+	place-self: center;
+}
+
+.profile-pic > img {
+	width: 160px;
+	border-radius: 50%;
+	display: none;
+}
+
+.bio > img {
+	width: 160px;
+	border-radius: 50%;
+	float: right;
+	margin: 0 auto;
+	padding-left: 5px;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	margin-left: 10px;
+	padding-left: 10px;
+	list-style-type: square;
+}
+
+nav > ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav > ul > li {
+	display: inline;
+	margin-right: 5px;
+}
+
+.note {
+	font-size: 0.9em;
+	font-style: italic;
+	padding-left: 8px;
+	display: block;
+	line-height: 1.3em;
+}
+
+.header {
+	grid-area: header;
+}
+
+nav {
+	grid-area: nav;
+}
+
+.bio {
+	grid-area: bio;
+}
+
+.teaching {
+	grid-area: teaching;
+}
+
+.publication {
+	grid-area: publication;
+}
+
+.misc {
+	grid-area: misc;
+}
+
+.contact {
+	grid-area: contact;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-areas: "header header profile-pic"
+						 "nav nav nav"
+						 "bio bio bio"
+						 "teaching teaching teaching"
+						 "publication publication publication"
+						 "misc misc misc"
+						 "contact contact contact";
+}
