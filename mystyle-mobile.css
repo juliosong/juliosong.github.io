@@ -57,7 +57,7 @@ h3:after {
 	place-self: center;
 }
 
-.profile-pic > img {
+.profile-pic img {
 	width: 160px;
 	border-radius: 50%;
 	display: none;

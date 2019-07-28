@@ -95,7 +95,7 @@ h3:after {
     justify-self: center;
 }
 
-.profile-pic > img {
+.profile-pic img {
     width: 250px;
     border-radius: 50%;
     display: block;
@@ -114,6 +114,7 @@ ul {
 	padding-left: 10px;
 	list-style-type: square;
 }
+
 
 nav > ul {
 	list-style-type: none;

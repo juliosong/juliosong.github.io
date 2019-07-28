@@ -94,7 +94,7 @@ h3:after {
     padding-bottom: 30px;
 }
 
-.profile-pic > img {
+.profile-pic img {
     width: 190px;
     border-radius: 50%;
     display: block;
