@@ -64,7 +64,7 @@ h4 {
 	100% { transform: scale(1.1);}
 }
 
-h3 > i, sup > i {
+h3 i, sup i {
 	padding-right: 10px;
 	color: #A8D13B;
 	font-size: 0.8em;
@@ -91,16 +91,16 @@ h3:after {
 .profile-pic {
 	grid-area: profile-pic;
 	place-self: center;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .profile-pic img {
-    width: 190px;
+    width: 250px;
     border-radius: 50%;
     display: block;
 }
 
-.bio > img {
+.bio img {
     display: none;
 }
 
@@ -114,22 +114,23 @@ ul {
 	list-style-type: square;
 }
 
-nav > ul {
+nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
-.nav-button > a {
+.nav-button a {
     font: bold 13px arial, helvetica, sans-serif;
     color: #555;
-    display: inline-block;
+    display: block;
     padding: 10px 20px;
 }
 
 .nav-button {
 	display: inline-block;
 	margin-right: 20px;
+    text-align: center;
     border: 1px solid #bbb;
     background-color: #ddd;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,1)), to(rgba(255,255,255,0)));
@@ -176,7 +177,7 @@ nav > ul {
   box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
 }
 
-.nav-button.green > a, .nav-button.red > a, .nav-button.blue > a {
+.nav-button.green a, .nav-button.red a, .nav-button.blue a {
     color: #fff;
 }
 
@@ -245,49 +246,51 @@ nav > ul {
 	line-height: 1.3em;
 }
 
-.header {
+.wrapper {
+        display: grid;
+        grid-template-areas: "header"
+                             "main";
+}
+
+header {
 	grid-area: header;
     justify-self: start;
     align-self: center;
+    display: grid;
+    grid-template-areas: "profile-pic name name"
+                         "profile-pic nav nav";
+    grid-column-gap: 40px;
+    align-items: center;
+    
+}
+
+.profile-pic {
+    grid-area: profile-pic;
+    place-self: center;
+}
+
+.name {
+    grid-area: name;
+    align-self: end;
+}
+
+
+main {
+    grid-area: main;
 }
 
 nav {
-	grid-area: nav;
-    justify-self:center;
+    grid-area: nav;
+    align-self: start;
 }
 
-.bio {
-	grid-area: bio;
+@media only screen and (max-width: 890px) {
+    nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px;
+    }
 }
-
-.teaching {
-	grid-area: teaching;
-}
-
-.publication {
-	grid-area: publication;
-}
-
-.misc {
-	grid-area: misc;
-}
-
-.contact {
-	grid-area: contact;
-}
-
- .wrapper {
-        display: grid;
-        grid-template-areas: "profile-pic header header"
-                             "profile-pic header header"
-                             ". header header"
-                             "nav nav nav"
-                             "bio bio bio"
-                             "teaching teaching teaching"
-                             "publication publication publication"
-                             "misc misc misc"
-                             "contact contact contact";
-}
-
-
-   

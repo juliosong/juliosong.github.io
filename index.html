@@ -5,8 +5,8 @@
     <title>Chenchen Song | Home</title>
     <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <link rel='stylesheet' media='screen and (max-width: 570px)' href='mystyle-mobile.css' />
-    <link rel='stylesheet' media='screen and (min-width: 571px) and (max-width: 1024px)' href='mystyle-tablet.css' />
+    <link rel='stylesheet' media='screen and (max-width: 666px)' href='mystyle-mobile.css' />
+    <link rel='stylesheet' media='screen and (min-width: 667px) and (max-width: 1024px)' href='mystyle-tablet.css' />
     <link rel='stylesheet' media='screen and (min-width: 1025px)' href='mystyle-computer.css' />
     <link href="bigfoot/dist/bigfoot-default.css" rel="stylesheet" type="text/css">
     <!-- icons -->
@@ -19,16 +19,17 @@
   	</script>
   </head>
 
-  <body>
+  <body><a id="top"></a>
     <div class="wrapper">
-		<div class="profile-pic">
+        <header>
+        <div class="profile-pic">
 		    <img src="img/profile.jpg" alt="This is a profile picture.">
 	    </div>
-		<div class="header">
+		<div class="name">
 		  <h1>Chenchen (Julio) Song</h1>
 		  <p class="uni">PhD, Linguistics, University of Cambridge</p>
         </div>
-		<nav><a id="top"></a>
+        <nav>
 			<ul>
 			  <!--<li> <a href="#bio">Intro</a> </li>-->
 			  <li class="nav-button"> <a href="#teaching">Teaching</a> </li>
@@ -37,11 +38,15 @@
 		      <li class="blue nav-button"> <a href="#contact">Contact</a> </li>
 			</ul>
 		</nav>
-		<div class="bio">
-		  <h3 id="bio"><i class="fas fa-id-card"></i>Intro<a href="#top"><sup><i class="fas fa-hand-point-up"></i></sup></a> </h3>
+        </header>
+        <main>
+		<section class="bio">
+		  <h3 id="bio"><i class="fas fa-id-card"></i>Intro<a href="#top"></a> </h3>
+          <div class="bio-img">
 		  <img src="img/profile.jpg" alt="This is a profile picture.">
-		  <p>I am a final-year PhD student in Linguistics at <a href="https://www.cam.ac.uk" target=“_blank”>University of Cambridge</a> and a member of <a href="https://www.cai.cam.ac.uk" target=“_blank”>Gonville &amp; Caius College</a> (the photo on the right was taken in the College library). I am a syntactician by training and have the following main research interests:</p>
-			<ul>
+		  <p>I am a final-year PhD student in Linguistics at <a href="https://www.cam.ac.uk" target=“_blank”>University of Cambridge</a> and a member of <a href="https://www.cai.cam.ac.uk" target=“_blank”>Gonville &amp; Caius College</a> (the photo on this page was taken in my College library). I am a syntactician by training and have the following main research interests:</p>
+          </div>
+			<ul id="main-research">
 				<li> <a href="https://en.wikipedia.org/wiki/Syntactic_category" target=“_blank”>Syntactic categories</a> (e.g., noun, verb, tense, determiner) and their formal ontology</li>
 				<li>Linguistic <a href="https://en.wikipedia.org/wiki/Feature_(linguistics)" target=“_blank”>feature</a> theories across paradigms (e.g., <a href="https://en.wikipedia.org/wiki/Minimalist_program" target=“_blank”>Minimalist Program</a>, <a href="https://en.wikipedia.org/wiki/Head-driven_phrase_structure_grammar" target=“_blank”>HPSG</a>)</li>
 				<li> <a href="https://en.wikipedia.org/wiki/Category_theory" target=“_blank”>Category theory</a> and its application in linguistics (especially in relation to syntactic categories or types)</li>
@@ -67,15 +72,15 @@
           <h4 class="newss">~~~~~~~~News~~~~~~~~</h4>
 		  <p>I have submitted my PhD dissertation, entitled &#8220;On the formal flexibility of syntactic categories,&#8221; the abstract of which can be found <a href="doc/Song2019PhD-abstract.pdf" target=“_blank”>here</a>. The full text will become available online when my degree gets approved.</p>
           </div>
-		</div>
-    <div class="teaching">
+		</section>
+        <section class="teaching">
       <a id="teaching"></a>
       <h3><i class="fas fa-chalkboard-teacher"></i>Teaching<a href="#top"><sup><i class="fas fa-hand-point-up"></i></sup></a></h3>
       <p>2019. <a href="https://t.viax.org" target=“_blank”>ViaX</a> one-on-one tutoring (high school student). Syntax.<br><span class="note">In this 20-hour online course I taught a Chinese high school student the basics of generative syntax and guided them to produce an 8000-word research paper on discourse factors involved in the distribution of null subjects in Mandarin Chinese. The course and the paper are both in English. </span> </p>
       <p>2017–2018. Cambridge undergraduate supervision (second-year students). Li9: Syntax.<br><span class="note">From <a href="https://www.undergraduate.study.cam.ac.uk/courses/how-will-i-be-taught" target=“_blank”>University website</a>: &#8220;Supervisions are small-group sessions ... with a supervisor (an academic) ... This system of personal tuition is one of Cambridge’s greatest strengths. Supervisions provide the opportunity to explore your subject more deeply, discuss your own work and ideas, and receive regular feedback.&#8221;</span></p>
       <p>2016–2017. Cambridge undergraduate supervision (first-year students). Li2: Structure and Meaning.</p>
-    </div>
-	  	<div class="publication">
+    </section>
+	  	<section class="publication">
           <a id="publication" ></a>
 		  <h3><i class="fas fa-book-open"></i>Publications<a href="#top"><sup><i class="fas fa-hand-point-up"></i></sup></a> </h3>
 		  <p>Below is a list of my academic publications:</p>
@@ -114,8 +119,8 @@
 			  <li>2016. On the edge of verb shell: What makes complex verbs so versatile? Gonville &amp; Caius Graduate Research Symposium ("Caius to the Future"). May 8. [<a href="doc/Song2016CaiusFut.pdf" target=“_blank”>poster</a>]<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup></li>
 		  </ul>
 		  <!--<p>**********************</p>-->
-		</div>
-    <div class="misc">
+		</section>
+        <section class="misc">
       <a id="misc"></a>
       <h3><i class="fas fa-palette"></i>Miscellany<a href="#top"><sup><i class="fas fa-hand-point-up"></i></sup></a></h3>
       <p>Here is some other stuff I have produced in the past five years:</p>
@@ -141,12 +146,14 @@
       <p>Besides, my Chinese translation of the famous Icelandic <a href="http://www.icetones.se/textar/m/maistjarnan.htm" target=“_blank”>poem</a>/<a href="https://www.youtube.com/watch?v=Ax1ZXEvXTqo" target=“_blank”>song</a> <em>Ma&iacute;stjarnan</em> (by Halld&oacute;r K. Laxness) was quoted by a journalist of Beijing Youth Daily (北京青年報) and made known via <a href="http://news.sohu.com/20130430/n374470140.shtml" target=“_blank”>news</a> when Former Prime Minister of Iceland J&oacute;hanna Sigur&eth;ard&oacute;ttir visited China in 2013.</p>
       <h4>Essay Prize</h4>
       <p>My nonlinguistic essay entitled &#8220;Scenery depiction in Classical Chinese poetry: Strategies, effects, and motivation&#8221; won the 2016 Master's Essay Prize of Gonville &amp; Caius College. You can find the essay <a href="doc/Song2016EssayPrize.pdf" target=“_blank”>here</a>. </p>
-    </div>
-		<div class="contact">
+    </section>
+        <section class="contact">
           <a id="contact"></a>
 		  <h3><i class="fas fa-paper-plane"></i>Contact<a href="#top"><sup><i class="fas fa-hand-point-up"></i></sup></a> </h3>
 		  <p>You can contact me via email<sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup> or find me on <a href="https://twitter.com/JulioSongC" target=“_blank”>Twitter</a>.</p>
-		</div>
+          <br><br>
+        </section>
+        </main>
 	</div>
 	<div class="footnotes">
 		<ol>
