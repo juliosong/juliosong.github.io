@@ -71,16 +71,16 @@ h3:after {
     /*margin-bottom: 5px;*/
 }
 
-.bio-img {
+/*.bio-img {
     display: flex;
     align-items: center;
     margin-bottom: 0px;
     padding-bottom: 0px;
-}
-
-/*#main-research {
-    clear: both;
 }*/
+
+#main-research {
+    clear: both;
+}
 
 a {
 	text-decoration: none;
@@ -96,6 +96,7 @@ nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+    display: flex;
 }
 
 .nav-button a {
@@ -241,3 +242,12 @@ main {
 	grid-template-areas: "header"
 						 "main";
 }
+
+/*@media only screen and (max-width: 420px) {
+    .nav-button a {
+        padding: 5px 5px;
+    }
+    .nav-button {
+        margin-right: 3px;
+    }
+}*/
