@@ -282,7 +282,8 @@ nav ul {
     }
     
     header {
-        display: flex;
+        display: block;
+        position:relative;
         width: 300px;
     }
 }
