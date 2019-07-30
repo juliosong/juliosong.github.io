@@ -276,3 +276,15 @@ nav ul {
 	line-height: 1.3em;
 }
 
+@media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .wrapper {
+        display:flex;
+    }
+    
+    .header {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        width: 300px;
+    }
+}
