@@ -2,7 +2,6 @@ body {
 	font-family: "PT Serif", "Noto Serif", Enriqueta, Georgia, "Times New Roman", 'serif';
 	background-color: beige;
 	width: 80%;
-    min-width: 300px;
 	margin: 25px auto;
 	line-height: 1.4em;
     }
