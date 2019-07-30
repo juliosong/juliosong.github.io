@@ -295,7 +295,8 @@ nav {
     }
 }
 
-@media screen\0 {
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+    /* IE10+ specific style rules */
     body {
 	font-family: "PT Serif", "Noto Serif", Enriqueta, Georgia, "Times New Roman", 'serif';
 	background-color: beige;
