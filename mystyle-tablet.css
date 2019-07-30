@@ -284,7 +284,7 @@ nav {
     align-self: start;
 }
 
-@media only screen and (max-width: 897px) {
+@media only screen and (max-width: 905px) {
     nav ul {
 	list-style-type: none;
 	margin: 0;
