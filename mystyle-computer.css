@@ -281,7 +281,7 @@ nav ul {
         display:flex;
     }
     
-    .header {
+    header {
         display: flex;
         flex-direction: row;
         position: fixed;
