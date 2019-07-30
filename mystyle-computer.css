@@ -418,4 +418,23 @@ nav ul {
 .nav-button.blue:active{
   background: #269CE9;
 }
+    
+    .profile-pic img {
+	width: 160px;
+	border-radius: 50%;
+	display: none;
+}
+
+.bio img {
+	width: 190px;
+	border-radius: 50%;
+	float: left;
+	margin-right: 20px;
+    /*margin-bottom: 5px;*/
+}
+
+
+#main-research {
+    clear: both;
+}
 }
