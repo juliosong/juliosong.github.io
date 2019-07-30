@@ -283,8 +283,6 @@ nav ul {
     
     header {
         display: flex;
-        flex-direction: row;
-        position: fixed;
         width: 300px;
     }
 }
