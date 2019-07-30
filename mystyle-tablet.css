@@ -445,6 +445,7 @@ nav {
 }
 
 .bio img {
+    display:block;
 	width: 190px;
 	border-radius: 50%;
 	float: left;
