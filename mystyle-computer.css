@@ -435,7 +435,7 @@ nav ul {
     display:block;
 	width: 190px;
 	border-radius: 50%;
-	float: left;
+	float: right;
 	margin-right: 20px;
     /*margin-bottom: 5px;*/
 }
