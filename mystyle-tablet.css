@@ -284,7 +284,7 @@ nav {
     align-self: start;
 }
 
-@media only screen and (max-width: 910px) {
+@media only screen and (max-width: 900px) {
     nav ul {
 	list-style-type: none;
 	margin: 0;
@@ -296,6 +296,11 @@ nav {
 }
 
 @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    body {
+        width: 80%;
+        margin: 25px auto;
+    }
+    
     .wrapper {
         display:block;
     }
@@ -304,6 +309,7 @@ nav {
         display: block;
         position:inherit;
         width: 300px;
+        margin-top: 0px;
     }
     
     .newss {
@@ -453,8 +459,4 @@ nav {
     /*margin-bottom: 5px;*/
 }
 
-
-#main-research {
-    clear: both;
-}
 }
