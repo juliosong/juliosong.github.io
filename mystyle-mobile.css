@@ -1,9 +1,9 @@
 body {
-	font-family: "PT Serif", "Noto Serif", Enriqueta, Georgia, "Times New Roman", 'serif';
+	font-family: Assistant, 'Red Hat Display', 'Open Sans', sans-serif;
 	background-color: beige;
 	width: 80%;
 	margin: 25px auto;
-	line-height: 1.4em;
+	line-height: 1.7em;
     }
 
 h1 {
@@ -20,17 +20,43 @@ h3 {
 	color: #6B5344;
     /*text-align: center;*/
 	font-weight: normal;
-	font-family: 'Scada', sans-serif;
+	font-family: Helvetica, sans-serif;
 	position: relative;
 	text-shadow: 0 2px 0 rgba(255,255,255,0.5);
 	font-size: 24px;
 	line-height: 40px;
 }
 
-h3 i, h4 i, sup i {
-	padding-right: 10px;
+p, ul, a {
+    font-size: 1.1em;
+}
+
+.news {
+    border: 1.5px solid maroon;
+}
+
+.news h4 {
+    margin: -15px auto 0;
+    width: 60px;
+    text-align: center;
+    background: beige;
+    font-family: Enriqueta, monospace;
+}
+
+.news p {
+    width: 80%;
+    margin: 7px auto 10px;
+    font-size: 1.1em;
+    font-family: Enriqueta, monospace;
+}
+
+h3 > i, sup > i {
 	color: #A8D13B;
 	font-size: 0.8em;
+}
+
+h3 > i {
+	padding-right: 10px;
 }
 
 h3:after {
@@ -92,6 +118,10 @@ ul {
 	list-style-type: square;
 }
 
+.publication li {
+    margin: 10px 0;
+}
+
 nav ul {
 	list-style-type: none;
 	margin: 0;
@@ -100,16 +130,23 @@ nav ul {
 }
 
 .nav-button a {
-    font: bold 13px arial, helvetica, sans-serif;
+    font: bold 15px arial, helvetica, sans-serif;
     color: #555;
     display: block;
     padding: 5px 10px;
 }
 
 .nav-button {
+    display: inline-block;
+    margin-right: 8px;
+    text-align:center;
+    background: #ddd;
+}
+
+/*.nav-button {
 	display: inline-block;
-	margin-right: 5px;
-    text-align: center;
+	margin-right: 20px;
+    text-align:center;
     border: 1px solid #bbb;
     background-color: #ddd;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,1)), to(rgba(255,255,255,0)));
@@ -124,7 +161,7 @@ nav ul {
   -ms-transition: background-color .2s ease-out;
   -o-transition: background-color .2s ease-out;
   transition: background-color .2s ease-out;
-  background-clip: padding-box; /* Fix bleeding */
+  background-clip: padding-box; 
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -139,7 +176,7 @@ nav ul {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
+}*/
 
 .nav-button:hover {
   background-color: #eee;
@@ -162,6 +199,10 @@ nav ul {
 
 .nav-button.green, .nav-button.red, .nav-button.blue {
   color: #fff;
+  /*text-shadow: 0 1px 0 rgba(0,0,0,.2);*/
+}
+/*.nav-button.green, .nav-button.red, .nav-button.blue {
+  color: #fff;
   text-shadow: 0 1px 0 rgba(0,0,0,.2);
   
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.3)), to(rgba(255,255,255,0)));
@@ -170,7 +211,7 @@ nav ul {
   background-image: -ms-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
   background-image: -o-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
   background-image: linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
-}
+}*/
 
 /* */
 
@@ -219,11 +260,13 @@ nav ul {
 
 .note {
 	font-size: 0.9em;
-	font-style: italic;
-	padding-left: 8px;
+	/*font-style: italic;*/
+    font-family: Enriqueta, monospace;
+	padding: 3px 12px;
 	display: block;
 	line-height: 1.3em;
 }
+
 
 header {
 	grid-area: header;
