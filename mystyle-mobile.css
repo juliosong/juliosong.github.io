@@ -3,19 +3,19 @@ body {
 	background-color: beige;
 	width: 80%;
 	margin: 25px auto;
-	line-height: 1.7em;
+	line-height: 1.7rem;
     }
 
 h1 {
-	font-size: 1.8em;
+	font-size: 1.8rem;
 }
 
 h2 {
-	font-size: 1.2em;
+	font-size: 1.2rem;
 }
 
 h3 {
-    margin: 1em 0 0.75em;
+    margin: 1rem 0 0.75rem;
 	padding: 0 0 5px 0;
 	color: #6B5344;
     /*text-align: center;*/
@@ -28,11 +28,11 @@ h3 {
 }
 
 h4 {
-    font-size: 1.1em;
+    font-size: 1.1rem;
 }
 
 p, ul, a {
-    font-size: 1.1em;
+    font-size: 1.1rem;
 }
 
 .news {
@@ -51,13 +51,13 @@ p, ul, a {
 .news p {
     width: 80%;
     margin: 7px auto 10px;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     font-family: Enriqueta, monospace;
 }
 
 h3 > i, sup > i {
 	color: #A8D13B;
-	font-size: 0.8em;
+	font-size: 0.8rem;
 }
 
 h3 > i {
@@ -146,7 +146,7 @@ nav ul {
 }
 
 .social i {
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 #twitter {
@@ -295,12 +295,16 @@ nav ul {
 }
 
 .note {
-	font-size: 0.9em;
+	font-size: 0.9rem;
 	/*font-style: italic;*/
     font-family: Enriqueta, monospace;
 	padding: 3px 12px;
 	display: block;
-	line-height: 1.3em;
+	line-height: 1.3rem;
+}
+
+.note a {
+    font-size: 0.9rem;
 }
 
 
