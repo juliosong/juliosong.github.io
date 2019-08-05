@@ -134,6 +134,37 @@ nav ul {
     display: flex;
 }
 
+.social ul {
+    list-style-type: none;
+	margin: 0 auto 15px;
+	padding: 0;
+}
+
+.social li {
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.social i {
+    font-size: 1.2em;
+}
+
+#twitter {
+    color:  #1da1f2;
+}
+
+#github {
+    color: #211F1F;
+}
+
+#blog {
+    color: #FF7F50;
+}
+
+#email {
+    color: #b23121;
+}
+
 .nav-button a {
     font: bold 13px arial, helvetica, sans-serif;
     color: #555;

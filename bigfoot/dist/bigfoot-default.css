@@ -56,6 +56,9 @@
   display: inline-block;
   position: relative;
   text-indent: 0;
+  font-size: initial; 
+  font-weight: initial; 
+  line-height: initial;
 }
 
 @media not print {
