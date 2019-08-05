@@ -302,3 +302,7 @@ nav ul {
 	display: block;
 	line-height: 1.3rem;
 }
+
+.note > a {
+    font-size: 0.9rem;
+}

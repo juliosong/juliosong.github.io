@@ -352,7 +352,7 @@ nav ul {
 	line-height: 1.3rem;
 }
 
-.note a {
+.note > a {
     font-size: 0.9rem;
 }
 
