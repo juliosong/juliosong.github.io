@@ -378,7 +378,7 @@ nav ul {
     
     .name {
         text-align: left;
-        margin-left: 250px;
+        margin-left: 200px;
         padding-left: 20px;
     }
     
@@ -413,6 +413,11 @@ nav ul {
     font-size: 1.1rem;
     font-family: Enriqueta, monospace;
 }
+    
+    nav {
+        margin-left: 200px;
+        padding-left: 20px;
+    }
     
     nav ul {
 	list-style-type: none;
@@ -556,6 +561,7 @@ nav ul {
 	border-radius: 50%;
 	display: block;
     float: left;
+    margin-right: 40px;
 }
 
 
