@@ -371,8 +371,14 @@ nav ul {
         position:inherit;
         width: 300px;
         margin-top: 0px;
-        justify-items: start;
         text-align: left;
+    }
+    
+    
+    
+    .name {
+        text-align: left;
+        clear: both;
     }
     
     p, ul, a {
@@ -547,8 +553,10 @@ nav ul {
     .profile-pic img {
 	width: 160px;
 	border-radius: 50%;
-	display: none;
+	display: block;
+    float: left;
 }
+
 
 .bio img {
     display:block;
@@ -556,6 +564,7 @@ nav ul {
 	border-radius: 50%;
 	float: left;
 	margin-right: 20px;
+    display: none;
     /*margin-bottom: 5px;*/
 }
 
