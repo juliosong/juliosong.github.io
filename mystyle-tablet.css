@@ -569,11 +569,6 @@ nav {
   background: #269CE9;
 }
     
-    .profile-pic img {
-	width: 160px;
-	border-radius: 50%;
-	display: none;
-}
 
      .profile-pic img {
 	width: 160px;
@@ -581,6 +576,7 @@ nav {
 	display: block;
     float: left;
     margin-right: 40px;
+    padding: 0;
 }
     
 .bio img {
