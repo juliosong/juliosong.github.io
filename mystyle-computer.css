@@ -361,9 +361,14 @@ nav ul {
         width: 80%;
         margin: 25px auto;
     }
+
     
     .wrapper {
         display:block;
+    }
+    
+    h3, h4 {
+        text-align: left;
     }
     
     header {

@@ -589,6 +589,10 @@ nav {
     /*margin-right: 40px;*/
 }
     
+    .bio {
+        clear: both;
+    }
+    
     /*.profile-pic {
         margin-top: 80px;
         padding-top: 20px;
