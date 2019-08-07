@@ -577,6 +577,8 @@ nav {
 	display: block;
     float: left;
     margin-right: 40px;
+    align-content: center;
+    align-items: center;
 }
     
      .profile-pic img {
