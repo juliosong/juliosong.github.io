@@ -392,7 +392,7 @@ nav {
         display: block;
         position:inherit;
         width: inherit;
-        margin-top: 0px;
+        /*margin-top: 0px;*/
         text-align: left;
     }
     
@@ -402,6 +402,8 @@ nav {
         text-align: left;
         margin-left: 200px;
         padding-left: 20px;
+        margin-top: 0px;
+        padding-top: 0px;
     }
     
     p, ul, a {
@@ -578,10 +580,10 @@ nav {
     margin-right: 40px;
 }
     
-    .profile-pic {
+    /*.profile-pic {
         margin-top: 80px;
         padding-top: 20px;
-    }
+    }*/
     
 .bio img {
     display:block;
