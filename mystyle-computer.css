@@ -381,10 +381,14 @@ nav ul {
     border: 1.5px solid maroon;
     margin-top: 30px;
 }
-
-    .social ul {
-        margin-left: 0;
-    }
+    
+.social ul {
+    list-style-type: none;
+	margin-top: 0;
+    margin-bottom: 15px;
+    margin-left: 0;
+	padding: 0;
+}
     
 .news h4 {
     margin: -15px auto 0;
@@ -554,7 +558,7 @@ nav ul {
 }
 
     #main-research {
-    clear: both;
+    clear: left;
 }
     
 }
