@@ -572,12 +572,19 @@ nav {
 }
     
 
+     .profile-pic {
+	width: 160px;
+	display: block;
+    float: left;
+    margin-right: 40px;
+}
+    
      .profile-pic img {
 	width: 160px;
 	border-radius: 50%;
 	display: block;
     float: left;
-    margin-right: 40px;
+    /*margin-right: 40px;*/
 }
     
     /*.profile-pic {
