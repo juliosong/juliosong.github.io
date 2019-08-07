@@ -576,11 +576,11 @@ nav {
 	display: block;
     float: left;
     margin-right: 40px;
-    padding: 0;
 }
     
     .profile-pic {
-        margin-top: 30px;
+        margin-top: 80px;
+        padding-top: 20px;
     }
     
 .bio img {
