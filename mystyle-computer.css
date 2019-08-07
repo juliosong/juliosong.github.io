@@ -371,6 +371,8 @@ nav ul {
         position:inherit;
         width: 300px;
         margin-top: 0px;
+        justify-items: start;
+        text-align: left;
     }
     
     p, ul, a {
@@ -558,7 +560,7 @@ nav ul {
 }
 
     #main-research {
-    clear: left;
+    clear: right;
 }
     
 }
