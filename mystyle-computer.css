@@ -382,6 +382,10 @@ nav ul {
     margin-top: 30px;
 }
 
+    .social ul {
+        margin-left: 0;
+    }
+    
 .news h4 {
     margin: -15px auto 0;
     width: 60px;
@@ -544,9 +548,13 @@ nav ul {
     display:block;
 	width: 260px;
 	border-radius: 50%;
-	float: right;
+	float: left;
 	margin-right: 20px;
     /*margin-bottom: 5px;*/
 }
 
+    #main-research {
+    clear: both;
+}
+    
 }
