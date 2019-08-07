@@ -369,7 +369,7 @@ nav ul {
     header {
         display: block;
         position:inherit;
-        width: 300px;
+        width: inherit;
         margin-top: 0px;
         text-align: left;
     }
@@ -378,6 +378,8 @@ nav ul {
     
     .name {
         text-align: left;
+        margin-left: 15px;
+        padding-left: 10px;
     }
     
     p, ul, a {
