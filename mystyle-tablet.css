@@ -148,6 +148,20 @@ ul {
 	list-style-type: square;
 }
 
+.label {
+	background-color: #00ccff;
+  color: #fff;
+  font-size: 0.8rem;
+  line-height: 2;
+  font-weight: bold;
+  padding: 2px 7px;
+  text-align: center;
+  vertical-align: baseline;
+  white-space: nowrap;
+  border-radius: 4px;
+  display: inline;
+}
+
 .publication li {
     margin: 10px 0;
 }

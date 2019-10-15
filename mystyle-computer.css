@@ -94,6 +94,20 @@ p, ul, a {
 	100% { transform: scale(1.1);}
 }*/
 
+.label {
+	background-color: #00ccff;
+  color: #fff;
+  font-size: 0.8rem;
+  line-height: 2;
+  font-weight: bold;
+  padding: 2px 7px;
+  text-align: center;
+  vertical-align: baseline;
+  white-space: nowrap;
+  border-radius: 4px;
+  display: inline;
+}
+
 h3 > i, sup > i {
 	color: #A8D13B;
 	font-size: 1.1rem;
