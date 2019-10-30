@@ -186,7 +186,7 @@ ul {
 	list-style-type: square;
 }
 
-.publication li {
+.publication li, .projects li, .misc li {
     margin: 10px 0;
 }
 
