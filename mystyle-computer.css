@@ -3,7 +3,7 @@
 
 body {
 	/*font-family: "PT Serif", "Noto Serif", Enriqueta, Georgia, "Times New Roman", 'serif';*/
-    font-family: Assistant, 'Red Hat Display', 'Open Sans', sans-serif;
+    font-family: 'Red Hat Display', Assistant, 'Open Sans', sans-serif;
 	background-color: beige;
 	width: 90%;
 	margin: 10px auto;
@@ -25,7 +25,7 @@ h3 {
 	color: #6B5344;
     text-align: center;
 	font-weight: normal;
-	font-family: Helvetica, sans-serif;
+	font-family: 'Red Hat Display', Helvetica, sans-serif;
 	position: relative;
 	text-shadow: 0 2px 0 rgba(255,255,255,0.5);
 	font-size: 24px;
@@ -231,7 +231,7 @@ nav ul {
 }
 
 .nav-button a {
-    font: bold 15px arial, helvetica, sans-serif;
+    font: bold 15px 'Red Hat Display', arial, helvetica, sans-serif;
     color: #555;
     display: inline-block;
     margin: 0;
@@ -241,6 +241,7 @@ nav ul {
 .nav-button {
     display: inline-block;
     margin-right: 20px;
+    margin-bottom: 5px;
     text-align:center;
     background: #ddd;
 }
@@ -295,11 +296,11 @@ nav ul {
   box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
 }
 
-.nav-button.green a, .nav-button.red a, .nav-button.blue a {
+.nav-button.green a, .nav-button.red a, .nav-button.blue a, .nav-button.orange a {
     color: #fff;
 }
 
-.nav-button.green, .nav-button.red, .nav-button.blue {
+.nav-button.green, .nav-button.red, .nav-button.blue .nav-button.orange {
   color: #fff;
   /*text-shadow: 0 1px 0 rgba(0,0,0,.2);*/
 }
@@ -328,6 +329,21 @@ nav ul {
 
 .nav-button.green:active{
   background: #57a957;
+}
+
+/* */
+
+.nav-button.orange{
+  background-color: #EEAF13;
+  border-color: #EEAF13;
+}
+
+.nav-button.orange:hover{
+  background-color: #F8CC5E;
+}
+
+.nav-button.orange:active{
+  background: #EEAF13;
 }
 
 /* */
@@ -449,7 +465,7 @@ nav ul {
 }
 
     .nav-button a {
-    font: bold 15px arial, helvetica, sans-serif;
+    font: bold 15px 'Red Hat Display', arial, helvetica, sans-serif;
     color: #555;
     display: inline-block;
     margin: 0;
@@ -459,6 +475,7 @@ nav ul {
 .nav-button {
     display: inline-block;
     margin-right: 20px;
+    margin-bottom: 5px;
     text-align:center;
     background: #ddd;
 }
@@ -513,11 +530,11 @@ nav ul {
   box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
 }
 
-.nav-button.green a, .nav-button.red a, .nav-button.blue a {
+.nav-button.green a, .nav-button.red a, .nav-button.blue a, .nav-button.orange a {
     color: #fff;
 }
 
-.nav-button.green, .nav-button.red, .nav-button.blue {
+.nav-button.green, .nav-button.red, .nav-button.blue, .nav-button.orange {
   color: #fff;
   /*text-shadow: 0 1px 0 rgba(0,0,0,.2);*/
 }
@@ -561,6 +578,21 @@ nav ul {
 
 .nav-button.red:active{
   background: #c43c35;
+}
+    
+/* */
+
+.nav-button.orange{
+  background-color: #EEAF13;
+  border-color: #EEAF13;
+}
+
+.nav-button.orange:hover{
+  background-color: #F8CC5E;
+}
+
+.nav-button.orange:active{
+  background: #EEAF13;
 }
 
 /* */

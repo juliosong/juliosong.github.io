@@ -175,6 +175,7 @@ nav ul {
 .nav-button {
     display: inline-block;
     margin-right: 8px;
+    margin-bottom: 3px;
     text-align:center;
     background: #ddd;
 }
@@ -229,11 +230,11 @@ nav ul {
   box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
 }
 
-.nav-button.green a, .nav-button.red a, .nav-button.blue a {
+.nav-button.green a, .nav-button.red a, .nav-button.blue a, .nav-button.orange a {
     color: #fff;
 }
 
-.nav-button.green, .nav-button.red, .nav-button.blue {
+.nav-button.green, .nav-button.red, .nav-button.blue, .nav-button.orange {
   color: #fff;
   /*text-shadow: 0 1px 0 rgba(0,0,0,.2);*/
 }
@@ -262,6 +263,21 @@ nav ul {
 
 .nav-button.green:active{
   background: #57a957;
+}
+
+/* */
+
+.nav-button.orange{
+  background-color: #EEAF13;
+  border-color: #EEAF13;
+}
+
+.nav-button.orange:hover{
+  background-color: #F8CC5E;
+}
+
+.nav-button.orange:active{
+  background: #EEAF13;
 }
 
 /* */
