@@ -1,0 +1,92 @@
+/* Base styling for two tablet modes. */
+/* overall (body, paragraph, link, list) */
+body {
+	width: 90%;
+	margin: 25px auto;
+}
+
+/* footer */
+footer {
+  p, a {
+    font-size: 1rem;
+  }
+}
+
+/* news */
+.news {
+  p {
+      width: 90%;
+  }
+}
+
+/* profile picture */
+.profile-pic {
+	grid-area: profile-pic;
+	place-self: center;
+  padding-bottom: 20px;
+  img {
+      width: 250px;
+      border-radius: 50%;
+      display: block;
+  }
+}
+
+/* bio */
+.bio img {
+    display: none;
+}
+
+/* navigation */
+nav ul {
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 10px;
+}
+
+.nav-button {
+  margin-right: 20px;
+  margin-bottom: 5px;
+  a {
+		font: bold 13px $font-nav;
+		display: block;
+		padding: 10px 20px;
+  }
+}
+
+/* layout */
+.wrapper {
+        display: grid;
+        grid-template-areas: "header"
+                             "main";
+}
+
+header {
+	grid-area: header;
+  justify-self: start;
+  align-self: center;
+  display: grid;
+  grid-template-areas: "profile-pic name name"
+                       "profile-pic nav nav";
+  grid-column-gap: 40px;
+  align-items: center;
+
+}
+
+.profile-pic {
+    grid-area: profile-pic;
+    place-self: center;
+}
+
+.name {
+    grid-area: name;
+    align-self: end;
+}
+
+
+main {
+    grid-area: main;
+}
+
+nav {
+    grid-area: nav;
+    align-self: start;
+}

@@ -1,0 +1,253 @@
+@import 'base';
+
+/* mobile */
+@media screen and (max-width: 666px) {
+	/* overall (body, paragraph, link, list) */
+	body {
+		width: 80%;
+		margin: 40px auto 25px;
+	}
+
+	/* footer */
+	footer {
+	  p, a {
+	    font-size: 0.9rem;
+	  }
+	}
+
+	/* news */
+	.news {
+	    p {
+	        width: 80%;
+	    }
+	}
+
+	/* profile picture */
+	.profile-pic img {
+		display: none;
+	}
+
+	/* bio */
+	.bio img {
+		width: 190px;
+		border-radius: 50%;
+		float: left;
+		margin-right: 20px;
+	}
+
+	/* main research (i.e., the bulllet-point section below the first paragraph of Intro) */
+	#main-research {
+	    clear: both;
+	}
+
+	/* navigation */
+	nav ul {
+	  grid-template-columns: 1fr 1fr 1fr;
+	  grid-row-gap: 5px;
+	}
+
+	.nav-button {
+	  margin-right: 8px;
+	  margin-bottom: 3px;
+	  a {
+	    font: bold 13px $font-nav;
+	    display: block;
+	    padding: 5px 10px;
+	  }
+	}
+}
+
+/* tablet small */
+/* only settings different from the mobile mode needs specifying */
+/* use @import instead of @use because Ruby Sass does not support the latter yet (currently only Dart Sass supports @use) */
+@media screen and (min-width: 667px) and (max-width: 749px) {
+	@import 'tablet-base';
+}
+
+/* tablet large */
+@media only screen and (min-width: 750px) and (max-width: 1024px) {
+	@import 'tablet-base';
+
+	/* navigation */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+  }
+}
+
+/* computer */
+@media screen and (min-width: 1025px) {
+	/* overall (body, paragraph, link, list) */
+	body {
+		width: 90%;
+		margin: 10px auto;
+	  padding: 10px;
+	}
+
+	/* headings */
+	h3 {
+	  text-align: center;
+	}
+
+	h4 {
+	    text-align: center;
+	}
+
+	/* footer */
+	footer {
+		margin-left: 380px;
+		width: 900px;
+	  p, a {
+	    font-size: 1rem;
+	  }
+	}
+
+	.news p {
+	    width: 90%;
+	}
+
+	h3:after {
+    width:  100%;
+	}
+
+	/* layout */
+	.wrapper {
+    display: grid;
+    grid-template-columns: [ma] 300px [me] auto [mi];
+    grid-column-gap: 80px;
+	}
+
+	header {
+		grid-column: ma / me;
+    position: fixed;
+    margin-top: 60px;
+    display: grid;
+    grid-template-areas: "profile-pic"
+                         "name";
+    justify-items: center;
+	}
+
+	main {
+    grid-column: me / mi;
+	}
+
+	.profile-pic {
+    grid-area: profile-pic;
+	}
+
+	.name {
+    grid-area: name;
+    text-align: center;
+	}
+
+	/* profile picture */
+	.profile-pic img {
+    width: 280px;
+    border-radius: 50%;
+    display: block;
+	}
+
+	/* bio */
+	.bio img {
+    display: none;
+	}
+
+	/* navigation */
+	nav ul {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px;
+	}
+
+	.nav-button {
+    margin-right: 20px;
+    margin-bottom: 5px;
+		a {
+	    font: bold 15px $font-nav;
+	    display: inline-block;
+	    margin: 0;
+	    padding: 10px 20px;
+		}
+	}
+}
+
+/* IE */
+@media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	/* overall (body, paragraph, list, link) */
+  body {
+    margin: 25px auto;
+  }
+
+	/* layout */
+  .wrapper {
+      display:block;
+  }
+
+  h3, h4 {
+      text-align: left;
+  }
+
+  header {
+    display: block;
+    position:inherit;
+    width: inherit;
+    margin-top: 0px;
+    text-align: left;
+  }
+
+  .name {
+    text-align: left;
+    margin-left: 200px;
+    padding-left: 20px;
+  }
+
+	/* social */
+	.social ul {
+		margin-top: 0;
+	  margin-bottom: 15px;
+	  margin-left: 0;
+	}
+
+	/* news */
+	.news p {
+	    width: 90%;
+	}
+
+	/* navigation */
+    nav {
+      margin-left: 200px;
+      padding-left: 20px;
+			ul {
+	    	display: flex;
+			}
+    }
+
+	.nav-button {
+    margin-right: 20px;
+    margin-bottom: 5px;
+		a {
+	    font: bold 15px $font-nav;
+	    display: inline-block;
+	    margin: 0;
+	    padding: 10px 20px;
+		}
+	}
+
+	/* profile picture */
+  .profile-pic img {
+		width: 160px;
+		border-radius: 50%;
+		display: block;
+    float: left;
+    margin-right: 40px;
+	}
+
+	/* bio */
+	.bio img {
+	   display: none;
+	}
+}

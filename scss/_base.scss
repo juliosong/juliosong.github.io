@@ -1,0 +1,240 @@
+/* This is the base shared by all media types. */
+
+/* fonts */
+/* Google fonts: Assistant, Enriqueta, Red Hat Display */
+@import url('https://fonts.googleapis.com/css?family=Assistant|Enriqueta|Red+Hat+Display&display=swap');
+/* fallback font 'Open Sans' for android China */
+@import url('https://fonts.font.im/css?family=Open+Sans:400,400i&subset=latin-ext');
+
+/* global variables */
+$font-body: 'Red Hat Display', Assistant, 'Open Sans', sans-serif;
+$font-heading: 'Red Hat Display', Helvetica, sans-serif;
+$font-news: Enriqueta, monospace;
+$font-nav: 'Red Hat Display', arial, helvetica, sans-serif;
+$bg-color: beige;
+
+/* overall (body, paragraph, list, link) */
+body {
+  font-family: $font-body;
+  background-color: $bg-color;
+  line-height: 1.7rem;
+}
+
+p, ul, a {
+    font-size: 1.1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin-left: 10px;
+  padding-left: 10px;
+  list-style-type: square;
+}
+
+.publication, .projects, .misc {
+  li {
+      margin: 10px 0;
+  }
+}
+
+/* headings */
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+h3 {
+  margin: 1rem 0 0.75rem;
+  padding: 0 0 5px 0;
+  color: #6B5344;
+  font-weight: normal;
+  font-family: $font-heading;
+  position: relative;
+  text-shadow: 0 2px 0 rgba(255,255,255,0.5);
+  font-size: 24px;
+  line-height: 40px;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
+/* footer */
+footer {
+  p, a {
+    color: #ACACAE;
+  }
+}
+
+/* news */
+.news {
+    margin-top: 30px;
+    border: 1.5px solid maroon;
+    h4 {
+      margin: -15px auto 0;
+      width: 60px;
+      text-align: center;
+      background: $bg-color;
+      font-family: $font-news;
+    }
+    p {
+      margin: 7px auto 10px;
+      font-size: 1.1rem;
+      font-family: $font-news;
+    }
+}
+
+/* label */
+.label {
+  background-color: #00ccff;
+  color: #fff;
+  font-size: 0.8rem;
+  line-height: 2;
+  font-weight: bold;
+  padding: 2px 7px;
+  text-align: center;
+  vertical-align: baseline;
+  white-space: nowrap;
+  border-radius: 4px;
+  display: inline;
+}
+
+/* icon for heading 3 */
+h3, sup {
+  > i {
+    color: #A8D13B;
+    font-size: 1.1rem;
+  }
+}
+
+h3 {
+  > i {
+    padding-right: 10px;
+  }
+  &:after {
+    width:  75%;
+    position: absolute;
+    content: "";
+    height: 1px;
+    border-radius: 2px;
+    left: 0;
+    bottom: 0;
+    box-shadow:
+      0 -1px 0 rgba(0,0,0,0.1),
+      0 1px 0 rgba(255,255,255,0.6);
+  }
+}
+
+/* university */
+.uni {
+  font-style: oblique;
+  font-weight: 500;
+}
+
+/* social */
+.social {
+  ul {
+    list-style-type: none;
+    margin: 0 auto 15px;
+    padding: 0;
+  }
+  li {
+    margin-right: 15px;
+    display: inline-block;
+  }
+  i {
+      font-size: 1.2rem;
+  }
+}
+
+/* social icon colors */
+#twitter {
+    color:  #1da1f2;
+}
+
+#github {
+    color: #211F1F;
+}
+
+#blog {
+    color: #FF7F50;
+}
+
+#email {
+    color: #b23121;
+}
+
+/* navigation */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-column-gap: 10px;
+}
+
+.nav-button {
+  display: inline-block;
+  text-align:center;
+  background: #ddd;
+  a {
+    color: #555;
+  }
+  &:hover {
+    background-color: #eee;
+    color: #555;
+  }
+  &:active {
+    background: #e9e9e9;
+    position: relative;
+    top: 1px;
+    text-shadow: none;
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
+  }
+}
+
+.nav-button.green, .nav-button.red, .nav-button.blue, .nav-button.orange {
+  color: #fff;
+  a {
+    color: #fff;
+  }
+}
+
+/* navigation button colors */
+@mixin nav-but($color, $bg, $hover) {
+  .nav-button.#{$color} {
+    background-color: $bg;
+    border-color: $bg;
+    &:hover {
+      background-color: $hover;
+    }
+    &:active {
+      background: $bg;
+    }
+  }
+}
+
+@include nav-but("green", #57a957, #62c462);
+@include nav-but("red", #c43c35, #ee5f5b);
+@include nav-but("orange", #EEAF13, #F8CC5E);
+@include nav-but("blue", #269CE9, #70B9E8);
+
+/* note */
+.note {
+  font-size: 0.9rem;
+  font-family: $font-news;
+  padding: 3px 12px;
+  display: block;
+  line-height: 1.3rem;
+  > a {
+      font-size: 0.9rem;
+    }
+}
