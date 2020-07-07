@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grammatical types that cannot be: A category-theoretic theorem for Chomsky-school generative syntax</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </head>
+  <body>
+   <header>
+    <h1 class="title">Grammatical types that cannot be: A category-theoretic theorem for Chomsky-school generative syntax</h1>
+    <h3 class="conference">ACT2020 virtual poster (July 8, 2020)</h3>
+    <div class="author"><div class="name">Chenchen (Julio) Song, cs791 AT cantab.ac.uk</div> <div class="institute">School of International Studies, Zhejiang University</div></div>
+  </header>
+<main>
+  <div></div>
+ <section>
+    <h2>❶ General background</h2>
+    <ul>
+    <li>Human language grammar works by <b>types</b> (e.g., noun, verb, tense). </li>
+    <li>The grammatical type inventory, abstractly speaking, is a <b>structured set</b>. </li>
+    <li>This set is structured at multiple <b>levels of abstraction</b>. </li>
+    </ul>
+    <p>Learn more from my <a href="https://www.youtube.com/watch?v=dzEPH8K4CaQ" class="info-link">video</a> or <a href="https://blog.juliosong.com/linguistics/mathematics/a-new-application-of-category-theory-in-linguistics-part-1/" class="info-link">blog</a>.</p>
+    <div class="iframe-embed-wrapper iframe-embed-responsive-16by9">
+      <iframe class="iframe-embed" src="https://www.youtube.com/embed/dzEPH8K4CaQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </section>
+  <section>
+    <h2>❷ Particular background</h2>
+    <ul style="margin-bottom:-5px;">
+    <li>At a certain level of abstraction, grammatical types are structured in <b>posets</b> (called "extended projections").</li>
+    <li>Each extended projection is defined by a <b>major part of speech</b>, which encompasses types of the same part of speech (e.g., tense and aspect are both <b>verbal</b> types).</li>
+    <li>There is an intuitive <b>parallelism</b> across extended projections (e.g., tenses anchor verbal events in time \(\approx\) demonstratives anchor nominal entities in space).</li>
+    <li>Extended projections vary in size and content but the parallelism is <b>always</b> there.</li>
+    <li>The parallelism is not strictly one-to-one but more exactly <b>zone-to-zone</b>.</li>
+    <li>Two major ways to formulate the zones:
+      <ul style="margin-top:10px;padding-left:20px;">
+        <li>\(\{\)core\(\}\) \(\rightarrow\) \(\{\)inflection\(\}\) \(\rightarrow\) \(\{\)discourse\(\}\)</li>
+        <li>\(\{\)classification\(\}\) \(\rightarrow\) \(\{\)point-of-view\(\}\) \(\rightarrow\) \(\{\)anchoring\(\}\) \(\rightarrow\) \(\{\)linking\(\}\)</li>
+      </ul>
+    </li>
+    </ul>
+    <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> My <a href="https://www.juliosong.com/doc/Song2020ACTabstract.pdf" class="info-link">abstract</a> adopts the second but the results are not contingent on the formulation.</p>
+  </section>
+  <div class="qrcode1">
+  <img class="figure-img" style="width:100%;" src="visit-my-blog.png" />
+  <img class="figure-img" style="width:61%;margin-left:65px;margin-top:-20px;" src="qr-code.png" />
+  </div>
+  <section>
+    <h2>❸ Examples</h2>
+    <p><span style="color:red;">A deliberately complex example:</span></p>
+    <img class="figure-img" src="ep1.png" />
+    <p><i>Incomparable elements are subtle variants of the same type (aka "flavored").</i></p>
+    <hr/>
+    <p><span style="color:red;">A simpler example:</span></p>
+    <img class="figure-img" style="width:95%;" src="ep2.png" />
+    <p><i>This language does not have grammaticalized tense but have classifiers.</i></p>
+    <hr/>
+    <p><span style="color:red;">An even simpler example:</span></p>
+    <img class="figure-img" style="width:50%;height:120px;" src="ep3.png" />
+    <p><i>These two extended projections have a very coarse granularity level (i.e., the linguist who uses them is glossing over a lot of details).</i></p>
+  </section>
+  <section>
+    <h2>❹ Category theory</h2>
+    <p>An extended projections can be viewed as a <b>poset category</b>.</p>
+    <ul>
+      <li>Objects: grammatical types</li>
+      <li>Morphisms: instances of the partial order</li>
+    </ul>
+    <p><b>Functors</b> (i.e., monotone functions) can model cross-extended-projection connections.</p>
+    <p><b>Question: What is the parallelism in categorical terms?</b></p>
+  </section>
+  <section>
+    <h2>❺ Category comparison</h2>
+   <p>The parallelism reflects <b>similarity</b> between extended projections. Three <b>levels of similarity</b> between categories:</p>
+   <ol style="margin-top:5px;">
+     <li><s>Isomorphism (strong)</s></li>
+     <li><s>Equivalence (middle)</s></li>
+     <li>Adjoint situation (weak)</li>
+   </ol>
+   <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> 1 and 2 are ruled out</p>
+   <ul style="margin-top:5px;">
+     <li>extended projections have varied sizes</li>
+     <li>poset categories are equiv <b>iff</b> they are iso</li>
+   </ul>
+   <p><i>So the parallemism must be at best an adjoint situation if it can be categorically modeled.</i></p>
+  </section>
+  <section>
+    <h2>❻ Mediated adjoint situation</h2>
+    <p>Unfortunately <b>no direct adjunction</b> between extended projections is linguistically meaningful (see my <a href="https://www.repository.cam.ac.uk/handle/1810/297789" class="info-link">dissertation</a> for detail).</p>
+    <p><i>In general many valid mathematical configurations are linguistically counterintuitive (and hence inapplicable).</i></p>
+    <p><b><u>Solution:</u></b> there <b>is</b> a linguistically meaningful adjunction between any extended projection poset (\(\mathbf{EP}_i\)) and the <b>zone chain</b> (\(\mathbf{EP}_0\)).</p>
+    <img class="figure-img" src="ep4.png" />
+    <p>The <b>left adjoint</b> \(F_i\) sends grammatical types to their zones, and the <b>right adjoint</b> \(G_i\) sends each zone to a "representative" type.</p>
+    <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> This representative cannot be randomly chosen. The linguistically meaningful choice is the type at the zone's <b>upper boundary</b>.</p>
+    <p><i>...because the "meaning" of each zone is the <b>completion</b> of a subderivation (e.g., the inflectional part of a sentence).</i></p>
+  </section>
+  <section>
+    <h2>❼ Freyd's adjoint functor theorem</h2>
+    <p>Category theory imposes a <b>constraint</b> on the above-mentioned adjoint situation:</p>
+    <div class="theorem"><b>Theorem:</b> Left adjoints preserve colimits (i.e., joins in the case of posets).</div>
+    <div class="corollary"><b>Corollary 1:</b> grammatical types sitting at zone upper boundaries <b>cannot</b> have incomparable variants (i.e., they cannot be "flavored").</div>
+    <p><i>...because if they do there will be no more adjunction (and hence no more parallelism).</i></p>
+  </section>
+  <section>
+    <h2>❽ Uniqueness of phase heads</h2>
+    <p>If our category-theoretic modeling is on the right track, it has a nontrivial consequence for <b>phase theory</b> (a key component of current Chomsky-school generative syntax):</p>
+    <ul style="margin-bottom:15px;">
+      <li>Phases are relatively complete subderivations ready for phonological/semantic interpretation.</li>
+      <li>Phase-demarcating types (aka "phase heads") are a subset of the zone upper boundary types.</li>
+    </ul>
+    <div class="corollary">
+      <b>Corollary 2:</b> no phase heads can be flavored.
+    </div>
+    <p>In particular, this means that the popular "flavored little v heads" (e.g., v<sub>do</sub>, v<sub>agent</sub>) are fundamentally flawed (v is a phase head).</p>
+    <p class="finalp">Some linguists already argued against them (see my <a href="https://www.juliosong.com/doc/Song2020ACTabstract.pdf" class="info-link">abstract</a> for detail). Category theory provides a rigorous mathematical argument.</p>
+    <div class="qrcode2">
+    <img class="figure-img" style="width:100%;" src="visit-my-blog.png" />
+    <img class="figure-img" style="width:61%;margin-left:65px;margin-top:-20px;" src="qr-code.png" />
+  </section>
+</main>
+  </body>
+</html>
