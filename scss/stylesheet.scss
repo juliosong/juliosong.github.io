@@ -1,7 +1,10 @@
 @import 'base';
 
-/* mobile */
-@media screen and (max-width: 666px) {
+
+/* mobile & default */
+/* put this fallback stylesheet outside any media query, or Microsoft Edge does not display correctly*/
+/*@media screen and (max-width: 666px) {*/
+
 	/* overall (body, paragraph, link, list) */
 	body {
 		width: 80%;
@@ -55,7 +58,9 @@
 	    padding: 5px 10px;
 	  }
 	}
-}
+
+/*}*/
+
 
 /* tablet small */
 /* only settings different from the mobile mode needs specifying */
@@ -83,6 +88,18 @@
 /* computer */
 @media screen and (min-width: 1025px) {
 	/* overall (body, paragraph, link, list) */
+
+	html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
 	body {
 		width: 90%;
 		margin: 10px auto;
@@ -250,5 +267,14 @@
 	/* bio */
 	.bio img {
 	   display: none;
+	}
+
+	/* footer */
+	footer {
+		/*margin-left: 380px;*/
+		width: 900px;
+	  p, a {
+	    font-size: 1rem;
+	  }
 	}
 }

@@ -203,48 +203,51 @@ nav ul {
   .note > a {
     font-size: 0.9rem; }
 
-/* mobile */
-@media screen and (max-width: 666px) {
-  /* overall (body, paragraph, link, list) */
-  body {
-    width: 80%;
-    margin: 40px auto 25px; }
+/* mobile & default */
+/* put this fallback stylesheet outside any media query, or Microsoft Edge does not display correctly*/
+/*@media screen and (max-width: 666px) {*/
+/* overall (body, paragraph, link, list) */
+body {
+  width: 80%;
+  margin: 40px auto 25px; }
 
-  /* footer */
-  footer p, footer a {
-    font-size: 0.9rem; }
+/* footer */
+footer p, footer a {
+  font-size: 0.9rem; }
 
-  /* news */
-  .news p {
-    width: 80%; }
+/* news */
+.news p {
+  width: 80%; }
 
-  /* profile picture */
-  .profile-pic img {
-    display: none; }
+/* profile picture */
+.profile-pic img {
+  display: none; }
 
-  /* bio */
-  .bio img {
-    width: 190px;
-    border-radius: 50%;
-    float: left;
-    margin-right: 20px; }
+/* bio */
+.bio img {
+  width: 190px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 20px; }
 
-  /* main research (i.e., the bulllet-point section below the first paragraph of Intro) */
-  #main-research {
-    clear: both; }
+/* main research (i.e., the bulllet-point section below the first paragraph of Intro) */
+#main-research {
+  clear: both; }
 
-  /* navigation */
-  nav ul {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row-gap: 5px; }
+/* navigation */
+nav ul {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 5px; }
 
-  .nav-button {
-    margin-right: 8px;
-    margin-bottom: 3px; }
-    .nav-button a {
-      font: bold 13px "Red Hat Display", arial, helvetica, sans-serif;
-      display: block;
-      padding: 5px 10px; } }
+.nav-button {
+  margin-right: 8px;
+  margin-bottom: 3px; }
+  .nav-button a {
+    font: bold 13px "Red Hat Display", arial, helvetica, sans-serif;
+    display: block;
+    padding: 5px 10px; }
+
+/*}*/
 /* tablet small */
 /* only settings different from the mobile mode needs specifying */
 /* use @import instead of @use because Ruby Sass does not support the latter yet (currently only Dart Sass supports @use) */
@@ -402,6 +405,16 @@ nav ul {
 /* computer */
 @media screen and (min-width: 1025px) {
   /* overall (body, paragraph, link, list) */
+  html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit; }
+
   body {
     width: 90%;
     margin: 10px auto;
@@ -536,6 +549,13 @@ nav ul {
 
   /* bio */
   .bio img {
-    display: none; } }
+    display: none; }
+
+  /* footer */
+  footer {
+    /*margin-left: 380px;*/
+    width: 900px; }
+    footer p, footer a {
+      font-size: 1rem; } }
 
 /*# sourceMappingURL=stylesheet.css.map */
