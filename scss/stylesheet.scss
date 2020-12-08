@@ -1,21 +1,89 @@
 @import 'base';
 
-
-/* mobile & default */
+/* mobile & default & iPhone SE */
 /* put this fallback stylesheet outside any media query, or Microsoft Edge does not display correctly*/
-/*@media screen and (max-width: 666px) {*/
+body {
+	width: 80%;
+	margin: 40px auto 25px;
+}
 
+h1 {
+	font-size: 1.25rem;
+}
+
+/* footer */
+footer {
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+/* news */
+.news {
+		p {
+				width: 80%;
+		}
+}
+
+/* profile picture */
+.profile-pic img {
+	display: none;
+}
+
+/* bio */
+.bio img {
+	width: 150px;
+	border-radius: 50%;
+	float: left;
+	margin-right: 18px;
+}
+
+/* navigation */
+nav ul {
+	grid-template-columns: 1fr 1fr;
+	grid-row-gap: 5px;
+}
+
+.nav-button {
+	margin-right: 8px;
+	margin-bottom: 3px;
+	a {
+		font: bold 13px $font-nav;
+		display: block;
+		padding: 5px 10px;
+	}
+}
+
+/* mobile & iPhone 8 */
+@media screen and (min-width: 341px) and (max-width: 666px) {
 	/* overall (body, paragraph, link, list) */
 	body {
 		width: 80%;
 		margin: 40px auto 25px;
+		padding-bottom: 30px;
+	}
+
+	h1 {
+		font-size: 1.5rem;
 	}
 
 	/* footer */
 	footer {
-	  p, a {
-	    font-size: 0.9rem;
-	  }
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
 	}
 
 	/* news */
@@ -32,15 +100,10 @@
 
 	/* bio */
 	.bio img {
-		width: 190px;
+		width: 175px;
 		border-radius: 50%;
 		float: left;
-		margin-right: 20px;
-	}
-
-	/* main research (i.e., the bulllet-point section below the first paragraph of Intro) */
-	#main-research {
-	    clear: both;
+		margin-right: 18px;
 	}
 
 	/* navigation */
@@ -58,8 +121,7 @@
 	    padding: 5px 10px;
 	  }
 	}
-
-/*}*/
+}
 
 
 /* tablet small */
@@ -83,27 +145,26 @@
     grid-row-gap: 10px;
     grid-column-gap: 10px;
   }
+
+	/* footer */
+	footer {
+		li {
+			display: inline-block;
+		}
+	}
 }
 
 /* computer */
 @media screen and (min-width: 1025px) {
 	/* overall (body, paragraph, link, list) */
-
-	html {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-*, *:before, *:after {
-    -webkit-box-sizing: inherit;
-    -moz-box-sizing: inherit;
-    box-sizing: inherit;
-}
-
 	body {
 		width: 90%;
-		margin: 10px auto;
+		margin: 10px auto 30px;
 	  padding: 10px;
+	}
+
+	h1 {
+		font-size: 1.8rem;
 	}
 
 	/* headings */
@@ -119,9 +180,9 @@
 	footer {
 		margin-left: 380px;
 		width: 900px;
-	  p, a {
-	    font-size: 1rem;
-	  }
+		li {
+			display: inline-block;
+		}
 	}
 
 	.news p {
@@ -143,6 +204,7 @@
 		grid-column: ma / me;
     position: fixed;
     margin-top: 20px;
+		margin-bottom: 30px;
     display: grid;
     grid-template-areas: "profile-pic"
                          "name";
@@ -165,7 +227,7 @@
 
 	/* profile picture */
 	.profile-pic img {
-    width: 280px;
+    width: 260px;
     border-radius: 50%;
     display: block;
 	}
@@ -271,10 +333,8 @@
 
 	/* footer */
 	footer {
-		/*margin-left: 380px;*/
-		width: 900px;
-	  p, a {
-	    font-size: 1rem;
-	  }
+		li {
+			display: inline-block;
+		}
 	}
 }

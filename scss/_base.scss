@@ -13,7 +13,8 @@ $font-news: Enriqueta, monospace;
 $font-nav: 'Red Hat Display', arial, helvetica, sans-serif;
 $bg-color: beige;
 $em-color: darkblue;
-$p-size: 1.05rem;
+$p-size: 1rem;
+$f-size: 1rem;
 
 /* overall (body, paragraph, list, link) */
 body {
@@ -76,6 +77,7 @@ h4 {
 footer {
   p, a {
     color: #ACACAE;
+    font-size: $f-size;
   }
 }
 

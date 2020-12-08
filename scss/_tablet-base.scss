@@ -5,11 +5,19 @@ body {
 	margin: 25px auto;
 }
 
+h1 {
+	font-size: 1.8rem;
+}
+
 /* footer */
 footer {
   p, a {
-    font-size: 1rem;
+    color: #ACACAE;
+    font-size: $f-size;
   }
+	li {
+		display: inline-block;
+	}
 }
 
 /* news */

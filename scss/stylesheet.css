@@ -12,7 +12,7 @@ body {
   line-height: 1.7rem; }
 
 p, ul, a {
-  font-size: 1.05rem; }
+  font-size: 1rem; }
 
 a {
   text-decoration: none; }
@@ -48,11 +48,12 @@ h3 {
   line-height: 40px; }
 
 h4 {
-  font-size: 1.05rem; }
+  font-size: 1rem; }
 
 /* footer */
 footer p, footer a {
-  color: #ACACAE; }
+  color: #ACACAE;
+  font-size: 1rem; }
 
 /* news */
 .news {
@@ -66,7 +67,7 @@ footer p, footer a {
     font-family: Enriqueta, monospace; }
   .news p {
     margin: 7px auto 10px;
-    font-size: 1.05rem;
+    font-size: 1rem;
     font-family: Enriqueta, monospace; }
 
 /* label */
@@ -86,7 +87,7 @@ footer p, footer a {
 /* icon for heading 3 */
 h3 > i, sup > i {
   color: #A8D13B;
-  font-size: 1.05rem; }
+  font-size: 1rem; }
 
 h3 > i {
   padding-right: 10px; }
@@ -203,17 +204,23 @@ nav ul {
   .note > a {
     font-size: 0.9rem; }
 
-/* mobile & default */
+/* mobile & default & iPhone SE */
 /* put this fallback stylesheet outside any media query, or Microsoft Edge does not display correctly*/
-/*@media screen and (max-width: 666px) {*/
-/* overall (body, paragraph, link, list) */
 body {
   width: 80%;
   margin: 40px auto 25px; }
 
+h1 {
+  font-size: 1.25rem; }
+
 /* footer */
-footer p, footer a {
-  font-size: 0.9rem; }
+footer ul {
+  margin: 0;
+  padding: 0; }
+footer li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
 
 /* news */
 .news p {
@@ -225,18 +232,14 @@ footer p, footer a {
 
 /* bio */
 .bio img {
-  width: 190px;
+  width: 150px;
   border-radius: 50%;
   float: left;
-  margin-right: 20px; }
-
-/* main research (i.e., the bulllet-point section below the first paragraph of Intro) */
-#main-research {
-  clear: both; }
+  margin-right: 18px; }
 
 /* navigation */
 nav ul {
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-row-gap: 5px; }
 
 .nav-button {
@@ -247,7 +250,53 @@ nav ul {
     display: block;
     padding: 5px 10px; }
 
-/*}*/
+/* mobile & iPhone 8 */
+@media screen and (min-width: 341px) and (max-width: 666px) {
+  /* overall (body, paragraph, link, list) */
+  body {
+    width: 80%;
+    margin: 40px auto 25px;
+    padding-bottom: 30px; }
+
+  h1 {
+    font-size: 1.5rem; }
+
+  /* footer */
+  footer ul {
+    margin: 0;
+    padding: 0; }
+  footer li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+
+  /* news */
+  .news p {
+    width: 80%; }
+
+  /* profile picture */
+  .profile-pic img {
+    display: none; }
+
+  /* bio */
+  .bio img {
+    width: 175px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 18px; }
+
+  /* navigation */
+  nav ul {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 5px; }
+
+  .nav-button {
+    margin-right: 8px;
+    margin-bottom: 3px; }
+    .nav-button a {
+      font: bold 13px "Red Hat Display", arial, helvetica, sans-serif;
+      display: block;
+      padding: 5px 10px; } }
 /* tablet small */
 /* only settings different from the mobile mode needs specifying */
 /* use @import instead of @use because Ruby Sass does not support the latter yet (currently only Dart Sass supports @use) */
@@ -258,9 +307,15 @@ nav ul {
     width: 90%;
     margin: 25px auto; }
 
+  h1 {
+    font-size: 1.8rem; }
+
   /* footer */
   footer p, footer a {
+    color: #ACACAE;
     font-size: 1rem; }
+  footer li {
+    display: inline-block; }
 
   /* news */
   .news p {
@@ -329,9 +384,15 @@ nav ul {
     width: 90%;
     margin: 25px auto; }
 
+  h1 {
+    font-size: 1.8rem; }
+
   /* footer */
   footer p, footer a {
+    color: #ACACAE;
     font-size: 1rem; }
+  footer li {
+    display: inline-block; }
 
   /* news */
   .news p {
@@ -401,24 +462,21 @@ nav ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 10px;
-    grid-column-gap: 10px; } }
+    grid-column-gap: 10px; }
+
+  /* footer */
+  footer li {
+    display: inline-block; } }
 /* computer */
 @media screen and (min-width: 1025px) {
   /* overall (body, paragraph, link, list) */
-  html {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; }
-
-  *, *:before, *:after {
-    -webkit-box-sizing: inherit;
-    -moz-box-sizing: inherit;
-    box-sizing: inherit; }
-
   body {
     width: 90%;
-    margin: 10px auto;
+    margin: 10px auto 30px;
     padding: 10px; }
+
+  h1 {
+    font-size: 1.8rem; }
 
   /* headings */
   	/*h3 {
@@ -432,8 +490,8 @@ nav ul {
   footer {
     margin-left: 380px;
     width: 900px; }
-    footer p, footer a {
-      font-size: 1rem; }
+    footer li {
+      display: inline-block; }
 
   .news p {
     width: 90%; }
@@ -451,6 +509,7 @@ nav ul {
     grid-column: ma / me;
     position: fixed;
     margin-top: 20px;
+    margin-bottom: 30px;
     display: grid;
     grid-template-areas: "profile-pic" "name";
     justify-items: center; }
@@ -467,7 +526,7 @@ nav ul {
 
   /* profile picture */
   .profile-pic img {
-    width: 280px;
+    width: 260px;
     border-radius: 50%;
     display: block; }
 
@@ -552,10 +611,7 @@ nav ul {
     display: none; }
 
   /* footer */
-  footer {
-    /*margin-left: 380px;*/
-    width: 900px; }
-    footer p, footer a {
-      font-size: 1rem; } }
+  footer li {
+    display: inline-block; } }
 
 /*# sourceMappingURL=stylesheet.css.map */
