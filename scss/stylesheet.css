@@ -511,7 +511,7 @@ nav ul {
     margin-top: 20px;
     margin-bottom: 30px;
     display: grid;
-    grid-template-areas: "profile-pic" "name";
+    grid-template-areas: "profile-pic" "name" "nav";
     justify-items: center; }
 
   main {
@@ -523,6 +523,9 @@ nav ul {
   .name {
     grid-area: name;
     text-align: center; }
+
+  nav {
+    grid-area: nav; }
 
   /* profile picture */
   .profile-pic img {
@@ -600,7 +603,7 @@ nav ul {
 
   /* profile picture */
   .profile-pic img {
-    width: 160px;
+    width: 175px;
     border-radius: 50%;
     display: block;
     float: left;
@@ -611,7 +614,9 @@ nav ul {
     display: none; }
 
   /* footer */
-  footer li {
-    display: inline-block; } }
+  footer {
+    margin-left: 0; }
+    footer li {
+      display: inline-block; } }
 
 /*# sourceMappingURL=stylesheet.css.map */

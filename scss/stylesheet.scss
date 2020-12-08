@@ -207,7 +207,8 @@ nav ul {
 		margin-bottom: 30px;
     display: grid;
     grid-template-areas: "profile-pic"
-                         "name";
+                         "name"
+												 "nav";
     justify-items: center;
 	}
 
@@ -222,6 +223,10 @@ nav ul {
 	.name {
     grid-area: name;
     text-align: center;
+	}
+
+	nav {
+		grid-area: nav;
 	}
 
 
@@ -319,7 +324,7 @@ nav ul {
 
 	/* profile picture */
   .profile-pic img {
-		width: 160px;
+		width: 175px;
 		border-radius: 50%;
 		display: block;
     float: left;
@@ -333,6 +338,7 @@ nav ul {
 
 	/* footer */
 	footer {
+		margin-left: 0;
 		li {
 			display: inline-block;
 		}
