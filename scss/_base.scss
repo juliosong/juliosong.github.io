@@ -12,6 +12,7 @@ $font-heading: 'Red Hat Display', Helvetica, sans-serif;
 $font-news: Enriqueta, monospace;
 $font-nav: 'Red Hat Display', arial, helvetica, sans-serif;
 $bg-color: beige;
+$em-color: darkblue;
 
 /* overall (body, paragraph, list, link) */
 body {
@@ -38,6 +39,11 @@ ul {
   li {
       margin: 10px 0;
   }
+}
+
+.key {
+  color: $em-color;
+  font-weight: bold;
 }
 
 /* headings */

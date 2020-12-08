@@ -90,13 +90,13 @@
 	}
 
 	/* headings */
-	h3 {
+	/*h3 {
 	  text-align: center;
 	}
 
 	h4 {
 	    text-align: center;
-	}
+	}*/
 
 	/* footer */
 	footer {
@@ -125,7 +125,7 @@
 	header {
 		grid-column: ma / me;
     position: fixed;
-    margin-top: 60px;
+    margin-top: 20px;
     display: grid;
     grid-template-areas: "profile-pic"
                          "name";
@@ -144,6 +144,7 @@
     grid-area: name;
     text-align: center;
 	}
+
 
 	/* profile picture */
 	.profile-pic img {

@@ -25,6 +25,10 @@ ul {
 .publication li, .projects li, .misc li {
   margin: 10px 0; }
 
+.key {
+  color: darkblue;
+  font-weight: bold; }
+
 /* headings */
 h1 {
   font-size: 1.8rem; }
@@ -404,12 +408,13 @@ nav ul {
     padding: 10px; }
 
   /* headings */
-  h3 {
-    text-align: center; }
-
-  h4 {
-    text-align: center; }
-
+  	/*h3 {
+  	  text-align: center;
+  	}
+  
+  	h4 {
+  	    text-align: center;
+  	}*/
   /* footer */
   footer {
     margin-left: 380px;
@@ -432,7 +437,7 @@ nav ul {
   header {
     grid-column: ma / me;
     position: fixed;
-    margin-top: 60px;
+    margin-top: 20px;
     display: grid;
     grid-template-areas: "profile-pic" "name";
     justify-items: center; }
