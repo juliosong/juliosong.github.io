@@ -475,8 +475,20 @@ nav ul {
     margin: 10px auto 30px;
     padding: 10px; }
 
-  h1 {
-    font-size: 1.8rem; }
+  .name h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+    padding-bottom: 5px; }
+
+  .uni {
+    margin-top: 0px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    margin-bottom: 0px; }
+
+  .name p {
+    margin-top: 3px;
+    padding-top: 0px; }
 
   /* headings */
   	/*h3 {
@@ -508,7 +520,7 @@ nav ul {
   header {
     grid-column: ma / me;
     position: fixed;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-bottom: 30px;
     display: grid;
     grid-template-areas: "profile-pic" "name" "nav";
@@ -529,7 +541,7 @@ nav ul {
 
   /* profile picture */
   .profile-pic img {
-    width: 260px;
+    width: 220px;
     border-radius: 50%;
     display: block; }
 
@@ -549,7 +561,7 @@ nav ul {
       font: bold 15px "Red Hat Display", arial, helvetica, sans-serif;
       display: inline-block;
       margin: 0;
-      padding: 10px 20px; } }
+      padding: 7px 20px; } }
 /* IE */
 @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* overall (body, paragraph, list, link) */
