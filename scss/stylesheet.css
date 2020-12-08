@@ -472,7 +472,7 @@ nav ul {
   /* overall (body, paragraph, link, list) */
   body {
     width: 90%;
-    margin: 10px auto 30px;
+    margin: 10px auto;
     padding: 10px; }
 
   .name h1 {
@@ -500,8 +500,10 @@ nav ul {
   	}*/
   /* footer */
   footer {
-    margin-left: 380px;
-    width: 900px; }
+    /*margin-left: 380px;*/
+    width: 900px;
+    grid-column: me/mi;
+    grid-row: 3; }
     footer li {
       display: inline-block; }
 
@@ -515,19 +517,27 @@ nav ul {
   .wrapper {
     display: grid;
     grid-template-columns: [ma] 300px [me] auto [mi];
-    grid-column-gap: 80px; }
+    grid-column-gap: 80px;
+    /*grid-template-rows: 150px 4200px 100px;*/
+    grid-template-rows: auto; }
 
   header {
     grid-column: ma / me;
+    grid-row: 1;
     position: fixed;
     margin-top: 15px;
     margin-bottom: 30px;
     display: grid;
     grid-template-areas: "profile-pic" "name" "nav";
-    justify-items: center; }
+    justify-items: center;
+    overflow: scroll; }
 
+  /*.header-wrapper {
+  	position: relative;
+  }*/
   main {
-    grid-column: me / mi; }
+    grid-column: me / mi;
+    grid-row: 1/2; }
 
   .profile-pic {
     grid-area: profile-pic; }
