@@ -12,7 +12,7 @@ body {
   line-height: 1.7rem; }
 
 p, ul, a {
-  font-size: 1.1rem; }
+  font-size: 1.05rem; }
 
 a {
   text-decoration: none; }
@@ -48,7 +48,7 @@ h3 {
   line-height: 40px; }
 
 h4 {
-  font-size: 1.1rem; }
+  font-size: 1.05rem; }
 
 /* footer */
 footer p, footer a {
@@ -66,7 +66,7 @@ footer p, footer a {
     font-family: Enriqueta, monospace; }
   .news p {
     margin: 7px auto 10px;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     font-family: Enriqueta, monospace; }
 
 /* label */
@@ -86,7 +86,7 @@ footer p, footer a {
 /* icon for heading 3 */
 h3 > i, sup > i {
   color: #A8D13B;
-  font-size: 1.1rem; }
+  font-size: 1.05rem; }
 
 h3 > i {
   padding-right: 10px; }

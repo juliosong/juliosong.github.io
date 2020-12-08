@@ -13,6 +13,7 @@ $font-news: Enriqueta, monospace;
 $font-nav: 'Red Hat Display', arial, helvetica, sans-serif;
 $bg-color: beige;
 $em-color: darkblue;
+$p-size: 1.05rem;
 
 /* overall (body, paragraph, list, link) */
 body {
@@ -22,7 +23,7 @@ body {
 }
 
 p, ul, a {
-    font-size: 1.1rem;
+    font-size: $p-size;
 }
 
 a {
@@ -68,7 +69,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1.1rem;
+    font-size: $p-size;
 }
 
 /* footer */
@@ -91,7 +92,7 @@ footer {
     }
     p {
       margin: 7px auto 10px;
-      font-size: 1.1rem;
+      font-size: $p-size;
       font-family: $font-news;
     }
 }
@@ -115,7 +116,7 @@ footer {
 h3, sup {
   > i {
     color: #A8D13B;
-    font-size: 1.1rem;
+    font-size: $p-size;
   }
 }
 
