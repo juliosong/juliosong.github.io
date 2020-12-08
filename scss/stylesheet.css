@@ -529,8 +529,7 @@ nav ul {
     margin-bottom: 30px;
     display: grid;
     grid-template-areas: "profile-pic" "name" "nav";
-    justify-items: center;
-    overflow: scroll; }
+    justify-items: center; }
 
   /*.header-wrapper {
   	position: relative;
