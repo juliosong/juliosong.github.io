@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Category theory in theoretical linguistics: A monadic semantics for root syntax</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </head>
+  <body>
+   <header>
+    <h1 class="title">Category theory in theoretical linguistics: A monadic semantics for root syntax</h1>
+    <h3 class="conference">ACT2022 e-poster (July 18–22, 2022)</h3>
+    <div class="author"><div class="name">Chenchen (Julio) Song, cjs021 AT zju.edu.cn</div> <div class="institute">School of International Studies, Zhejiang University</div></div>
+  </header>
+<main>
+  <div></div>
+ <section>
+    <h2>❶ In a nutshell</h2>
+    <ul>
+    <li>Root syntax is a popular branch of Chomskyan linguistics (since the 1990s).</li>
+    <li>But so far it has received nearly no attention in formal semantics.</li>
+    <li>A principled compositional semantics for root syntax is hard to get (see <a href="https://www.juliosong.com/doc/Song2021LENLS18.pdf" class="ref-link">Song 2021</a>).</li>
+    <li>Category theory offers a neat solution (via the writer monad).</li>
+    </ul>
+    <p>Learn more from my <a href="https://youtu.be/mgS5ePNtHGk" class="info-link">4-min video</a> or <a href="https://blog.juliosong.com/linguistics/mathematics/another-application-of-category-theory-in-linguistics-part-1/" class="info-link">blogpost</a>.</p>
+    <div class="iframe-embed-wrapper iframe-embed-responsive-16by9">
+      <iframe class="iframe-embed" src="https://www.youtube.com/embed/mgS5ePNtHGk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </section>
+  <section>
+    <h2>❷ Root syntax &amp; its generalization</h2>
+    <p>Two major incarnations (I use DM): </p>
+    <ul>
+    <li>Distributed Morphology (DM)</li>
+    <li>Exoskeletal Syntax (XS)</li>
+    </ul>
+    <p>Mainly for decomposition of content words:</p>
+    <ul>
+    <li>Schema: [<sub>X</sub> X √R ] </li>
+    <li>X = categorizer (purely functional)</li>
+    <li>√R = root (purely idiosyncratic)</li>
+    <li>Ex.1: [<sub>N</sub> n √DOG] => (/dɔg/, 🐶) </li>
+    <li>Ex.2: [<sub>V</sub> v √RUN] => (/rʌn/, 🏃) </li>
+    <li>Roots have no fixed sound/meaning.</li>
+    </ul>
+    <p>Generalized root syntax (<a href="https://www.repository.cam.ac.uk/handle/1810/297789" class="ref-link">Song 2019</a>):</p>
+    <ul style="margin-bottom:-5px;">
+    <li>Extended def. of X (from a few major parts of speech [P] to any functional category [F]) </li>
+    <li>[X = P] => content word </li>
+    <li>[X = non-P F] => semigrammatical word </li>
+    <li>Root categorization <=> root support </li>
+    </ul>
+  </section>
+  <div class="qrcode1">
+  <img class="figure-img" style="width:100%;" src="visit-my-blog.png" />
+  <img class="figure-img" style="width:61%;margin-left:65px;margin-top:-20px;" src="qr-code.png" />
+  </div>
+  <section>
+    <h2>❸ Examples of semigrammaticality</h2>
+    <p><span style="color:DarkBlue;">Ex.3: Chinese classifiers [Cl<sub>\(\lambda P \lambda x. x \in \mathrm{Atom}(P)\)</sub>]</span></p>
+    <p>a. <i>bǎ</i> 'grip' (objects with handle-like bars), <i>běn</i> 'volume' (bound print matter), <i>dòng</i> 'pillar' (buildings), <i>miàn</i> 'surface' (flat objects), etc.</p>
+    <p>b. <i>yī <b>wèi/míng/gè</b> lǎoshī</i>&nbsp; 'one Cl<sub>r/o/n</sub> teacher'<br>
+    (r = respectful, o = official, n = neutral)
+    </p>
+    <hr/>
+    <p><span style="color:DarkBlue;">Ex.4: Vietnamese negators [Neg<sub>\(\lambda t. \neg t\)</sub>]</span></p>
+    <p>a. <i>không</i> 'empty' (default), <i>đâu</i> 'where' (emphatic, colloquial), <i>nào</i> 'which' (colloquial but elevated), <i>đếch</i> 'fuck' (mildly vulgar), <i>đéo</i> 'penis, fuck' (very vulgar), etc. </p>
+    <p>b. <i>Em <b>không</b> cần anh giúp.</i> <br>'I Neg<sub>n</sub> need your help.' (n = neutral)</p>
+    <p>c. <i>Tao <b>đéo</b> cần mày giúp.</i><br>'I<sub>v</sub> Neg<sub>v</sub> need your<sub>v</sub> help.' (v = vulgar)</p>
+  </section>
+  <section>
+    <h2>❹ Monadic semantics</h2>
+    <p>Point of departure: formal semantics for generative grammar (<a href="https://www.wiley.com/en-us/Semantics+in+Generative+Grammar-p-9780631197133" class="ref-link">Heim &amp; Kratzer 1998</a>)</p>
+    <ul>
+    <li>natural language expressions =><br>
+    syntactic structures (binary trees) =><br>
+    semantic denotations (\(\lambda\)-calculus)</li>
+    <li>We focus on the semantic side, which is usually taken to be a set-theoretic structure. It can be viewed as a category \(\mathbf{Sem}\).</li>
+    <li>Then, we define a monad on \(\mathbf{Sem}\). </li>
+    </ul>
+    <div class="def"><b>Def. 1 (cf. <a href="https://global.oup.com/academic/product/enriched-meanings-9780198847854?cc=tw&lang=en&" class="ref-link">Asudeh &amp; Giorgolo 2020</a>):</b><br>
+    Let \(\langle T, \eta, \mu\rangle\) be a monad on \(\mathbf{Sem}\), such that \(\forall A, TA = \langle A, \{\langle X, \surd_1\rangle, \langle Y, \surd_2\rangle, \dots \} \rangle\), where \(\langle X, \surd_1\rangle\) etc. record the root-supported types in the syntactuc structure denoting \(A\). Then \(\forall f: A \rightarrow B, Tf = \lambda\langle x, Q\rangle.\langle f(x), Q\rangle\), where \(Q\) is also a set of type-root pairs. The two natural transformations are \(\eta_A = \langle x, \emptyset\rangle\) and \(\mu_A(\langle x, P\rangle, Q\rangle) = \langle x, P\cup Q\rangle\). Wiith \(\mu\), we can further define >>= on \(ta: TA\) and \(f: A \rightarrow TB\) as \(ta >>= f = \mu_B(Tf(ta))\).</div>
+    <div class="rem"><b>Remark 1:</b> The set of grammatical type–root pairs serves as a record of the root support situation in a linguistic expression, after it has been put in root syntactic format. The log set is innert in compositional semantics and only gets "opened" at the final stage of semantic interpretation. </div>
+    <p>We complete the monadic semantics with the ancillary function \(\mathrm{write}\), which wraps a grammatical type--root pair into a dummy monadic term:</p>
+    <div class="def"><b>Def. 2 (cf. A&amp;G2020):</b><br>
+    \(\mathrm{write}\langle X, \surd\rangle = \langle 1, \{\langle X, \surd\rangle\}\rangle\).</div>
+     <p>Together with >>=, this gives us a way to compose the root categorization schema: </p>
+    <ul>
+    <li>⟦[<sub>X</sub> X √ ]⟧ = \(\mathrm{write}(\text{X}, \surd) >>= \lambda y. \eta(\text{⟦X⟧})\)</li>
+    <li>This writes a grammatical type--root pair into the log slot of a vacuous monadic term.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>❺ Examples of monadic composition</h2>
+   <p><span style="color:DarkBlue;">Ex.5: the English noun <i>dog</i></span></p>
+   <p>⟦dog⟧ = ⟦[<sub>N</sub> n √DOG]⟧ = \(\mathrm{write}(\text{n}, \text{√DOG})\) \(>>=\lambda y. \eta(\text{⟦n⟧}) = \langle\text{⟦n⟧}, \{\langle\text{⟦n⟧}, \text{√DOG}\rangle\}\rangle\)<br>
+   (an entity enriched by √DOG)
+    </p>
+  <p><span style="color:DarkBlue;">Ex.6: the Vietnamese negator <i>đéo</i></span></p>
+   <p>⟦đéo⟧ = ⟦[<sub>Neg</sub> Neg √ĐÉO]⟧ = \(\mathrm{write}(\text{Neg},\) \(\text{√ĐÉO})>>=\lambda y. \eta(\text{⟦Neg⟧}) = \langle\text{⟦Neg⟧}, \)\(\{\langle\text{⟦Neg⟧}, \text{√ĐÉO}\rangle\}\rangle\)<br>
+   (a boolean function enriched by √ĐÉO)
+   </p>
+  </section>
+  <section>
+    <h2>❻ Categorical setting</h2>
+    <p>The category \(\mathbf{Sem}\) in Def. 1, being a subcategory of \(\mathbf{Set}\), is cartesian closed. We do not need extra structures, such as left/right directionality, because word order is not regulated by syntax/semantics in Chomskyan syntax (but is done in phonology). </p>
+    <p>Def. 1 is given from the perspective of semantics. We could also start from the syntactic side, but it is unclear at the current stage whether Chomskyan syntax defines a category.</p>
+    <p>Moreover, if we define the monad on the syntactic side (that is, assuming Chomskyan syntax does define a category), there is the further complication of mapping that monad to the monad on the semantic side.</p>
+    <p>So, focusing on the semantic side seems to be the "shortest path" for us. </p>
+  </section>
+  <section>
+    <h2>❼ Conclusion</h2>
+    <ul>
+    <li>The writer monad can help linguists develop a compositional semantics for root syntax.</li>
+    <li>Most (if not all) semantic composition is monadic if we take root syntax seriously, simply because every sentence contains content words, whose idiosyncratic contribution to semantic interpretation must be carried along by the monadic tool.</li>
+    <li>But since the root support log does not interfere with stuff on the pure function side, we can safely ignore it when root syntax is not the focus. </li>
+    <li>Overall, this is reminiscent of the global consequences of the extensional-to-intensional jump, Now we are experiencing this again in the simple functional–to–monadic function jump.</li>
+    </ul>
+  </section>
+</main>
+  </body>
+</html>
