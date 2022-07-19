@@ -85,15 +85,15 @@
     <li>Then, we define a monad on \(\mathbf{Sem}\). </li>
     </ul>
     <div class="def"><b>Def. 1 (cf. <a href="https://global.oup.com/academic/product/enriched-meanings-9780198847854?cc=tw&lang=en&" class="ref-link">Asudeh &amp; Giorgolo 2020</a>):</b><br>
-    Let \(\langle T, \eta, \mu\rangle\) be a monad on \(\mathbf{Sem}\), such that \(\forall A, TA = \langle A, \{\langle X, \surd_1\rangle, \langle Y, \surd_2\rangle, \dots \} \rangle\), where \(\langle X, \surd_1\rangle\) etc. record the root-supported types in the syntactuc structure denoting \(A\). Then \(\forall f: A \rightarrow B, Tf = \lambda\langle x, Q\rangle.\langle f(x), Q\rangle\), where \(Q\) is also a set of type-root pairs. The two natural transformations are \(\eta_A = \langle x, \emptyset\rangle\) and \(\mu_A(\langle x, P\rangle, Q\rangle) = \langle x, P\cup Q\rangle\). Wiith \(\mu\), we can further define >>= on \(ta: TA\) and \(f: A \rightarrow TB\) as \(ta >>= f = \mu_B(Tf(ta))\).</div>
-    <div class="rem"><b>Remark 1:</b> The set of grammatical type–root pairs serves as a record of the root support situation in a linguistic expression, after it has been put in root syntactic format. The log set is innert in compositional semantics and only gets "opened" at the final stage of semantic interpretation. </div>
-    <p>We complete the monadic semantics with the ancillary function \(\mathrm{write}\), which wraps a grammatical type--root pair into a dummy monadic term:</p>
+    Let \(\langle T, \eta, \mu\rangle\) be a monad on \(\mathbf{Sem}\), such that \(\forall A. TA = \langle A, \{\langle X, \surd_1\rangle, \langle Y, \surd_2\rangle, \dots \} \rangle\), where \(\langle X, \surd_1\rangle\) etc. record the root-supported types in the syntactic structure denoting \(A\). Then \(\forall f: A \rightarrow B. Tf = \lambda\langle x, Q\rangle.\langle f(x), Q\rangle\), where \(Q\) is also a set of type-root pairs. The two natural transformations are \(\eta_A = \langle x, \emptyset\rangle\) and \(\mu_A(\langle x, P\rangle, Q\rangle) = \langle x, P\cup Q\rangle\). With \(\mu\), we can further define >>= on \(ta: TA\) and \(f: A \rightarrow TB\) as \(ta >>= f = \mu_B(Tf(ta))\).</div>
+    <div class="rem"><b>Remark 1:</b> The set of grammatical type–root pairs serves as a record of the root support situation in a linguistic expression, after it has been put in root syntactic format. The log set is "inert" in semantic composition and only gets "opened" at the final stage of semantic interpretation. </div>
+    <p>We complete the monadic semantics with the ancillary function \(\mathrm{write}\), which wraps a grammatical type–root pair into a dummy monadic term:</p>
     <div class="def"><b>Def. 2 (cf. A&amp;G2020):</b><br>
     \(\mathrm{write}\langle X, \surd\rangle = \langle 1, \{\langle X, \surd\rangle\}\rangle\).</div>
      <p>Together with >>=, this gives us a way to compose the root categorization schema: </p>
     <ul>
     <li>⟦[<sub>X</sub> X √ ]⟧ = \(\mathrm{write}(\text{X}, \surd) >>= \lambda y. \eta(\text{⟦X⟧})\)</li>
-    <li>This writes a grammatical type--root pair into the log slot of a vacuous monadic term.</li>
+    <li>This writes a grammatical type–root pair into the log slot of a vacuous monadic term.</li>
     </ul>
   </section>
   <section>
@@ -106,10 +106,11 @@
    <p>⟦đéo⟧ = ⟦[<sub>Neg</sub> Neg √ĐÉO]⟧ = \(\mathrm{write}(\text{Neg},\) \(\text{√ĐÉO})>>=\lambda y. \eta(\text{⟦Neg⟧}) = \langle\text{⟦Neg⟧}, \)\(\{\langle\text{⟦Neg⟧}, \text{√ĐÉO}\rangle\}\rangle\)<br>
    (a boolean function enriched by √ĐÉO)
    </p>
+   <p>See Song (<a href="https://www.juliosong.com/doc/Song2021LENLS18.pdf" class="ref-link">2021</a>, <a href="https://www.juliosong.com/doc/Song2022AALslides.pdf" class="ref-link">2022</a>) for larger examples.</p>
   </section>
   <section>
     <h2>❻ Categorical setting</h2>
-    <p>The category \(\mathbf{Sem}\) in Def. 1, being a subcategory of \(\mathbf{Set}\), is cartesian closed. We do not need extra structures, such as left/right directionality, because word order is not regulated by syntax/semantics in Chomskyan syntax (but is done in phonology). </p>
+    <p>The category \(\mathbf{Sem}\) in Def. 1, being a subcategory of \(\mathbf{Set}\), is cartesian closed. We do not need extra structures, such as left/right directionality, because word order is not regulated by syntax/semantics in Chomskyan linguistics (but is done in phonology). </p>
     <p>Def. 1 is given from the perspective of semantics. We could also start from the syntactic side, but it is unclear at the current stage whether Chomskyan syntax defines a category.</p>
     <p>Moreover, if we define the monad on the syntactic side (that is, assuming Chomskyan syntax does define a category), there is the further complication of mapping that monad to the monad on the semantic side.</p>
     <p>So, focusing on the semantic side seems to be the "shortest path" for us. </p>
@@ -118,9 +119,9 @@
     <h2>❼ Conclusion</h2>
     <ul>
     <li>The writer monad can help linguists develop a compositional semantics for root syntax.</li>
-    <li>Most (if not all) semantic composition is monadic if we take root syntax seriously, simply because every sentence contains content words, whose idiosyncratic contribution to semantic interpretation must be carried along by the monadic tool.</li>
-    <li>But since the root support log does not interfere with stuff on the pure function side, we can safely ignore it when root syntax is not the focus. </li>
-    <li>Overall, this is reminiscent of the global consequences of the extensional-to-intensional jump, Now we are experiencing this again in the simple functional–to–monadic function jump.</li>
+    <li>Most (if not all) semantic composition is monadic if we take root syntax seriously, simply because every sentence contains content words, whose idiosyncratic contribution to semantic interpretation must be carried along via the monadic shell.</li>
+    <li>But since the root support log does not interfere with computation in the pure function slot, we can safely ignore the logging or even root syntax altogether when subatomic structure is not the focus. </li>
+    <li>Overall, this is reminiscent of the global consequences of the extensional-to-intensional jump. Now we are experiencing this again in the ordinary-to-monadic composition jump.</li>
     </ul>
   </section>
 </main>
