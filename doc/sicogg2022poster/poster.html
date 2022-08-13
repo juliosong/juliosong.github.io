@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weakening cartography: On the formal foundation of functional hierarchies</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Play:wght@400;700&family=Public+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://kit.fontawesome.com/de098d1d4a.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+   <header>
+    <h1 class="title">Weakening cartography: On the formal foundation of functional hierarchies</h1>
+    <h3 class="conference">SICOGG 2022 e-poster (August 12–14, 2022)</h3>
+    <div class="author"><div class="name">Chenchen (Julio) Song, cjs021 AT zju.edu.cn</div> <div class="institute">School of International Studies, Zhejiang University</div></div>
+  </header>
+<main>
+  <div></div>
+ <section>
+    <h2>➊ Classical cartography, formally</h2>
+    <p>Hierarchies of syntactic categories, each given rise to by a binary relation \(\mathbf{R}_\mathcal{A}\) on categories of a major part of speech \(\mathcal{A}\), such that \(\forall X, Y, Z \in \mathcal{A}\)</p>
+    <ul>
+      <li>\(\neg\mathbf{R}_\mathcal{A}(X, X)\) (irreflexivity)</li>
+      <li>\(\mathbf{R}_\mathcal{A}(X, Y) \Rightarrow \neg\mathbf{R}_\mathcal{A}(Y, X)\) (asymmetry)</li>
+      <li>\(\mathbf{R}_\mathcal{A}(X, Y) \wedge \mathbf{R}_\mathcal{A}(Y, Z) \Rightarrow \mathbf{R}_\mathcal{A}(X, Z)\) (transitivity)</li>
+      <li>\(\forall X, Y \in \mathcal{A}, \mathbf{R}_\mathcal{A}(X, Y) \vee \mathbf{R}_\mathcal{A}(Y, X)\) (totality)</li>
+    </ul>
+    <p>Thus, a classical cartographic hierarchy is a <b>strict total order</b>. The binary relation in question is usually deemed one of <b>selection</b>:
+    <ul>
+      <li>\(\mathbf{R}_\mathcal{A}(X, Y)\) iff \(X\) selects \(Y\)</li>
+    </ul>
+    <p><i class='far fa-hand-point-right' style="color:#0F52BA;"></i> The classical view is multiply problematic.</p>
+  </section>
+  <section>
+    <h2>➋ Problems of classical cartography</h2>
+    <p><b>1. Transitivity failure</b></p>
+    <ul>
+      <li>Norwegian (<a href="https://www.lotpublications.nl/Documents/073_fulltext.pdf" class="ref-link">Nilsen 2003</a>)<br> \(\mathbf{R}_\mathcal{V}(\mathbf{H}(\text{possibly}), \text{Neg})\; \wedge\)<br>\(\mathbf{R}_\mathcal{V}(\text{Neg}, \mathbf{H}(\text{always}))\; \wedge\)<br> \(\mathbf{R}_\mathcal{V}(\mathbf{H}(\text{possibly}), \mathbf{H}(\text{always}))\; \wedge\)<br> \(\mathbf{R}_\mathcal{V}(\mathbf{H}(\text{always}), \mathbf{H}(\text{possibly}))\)<br><span style="color: #A9A9A9;">[\(\mathbf{H}(e)\) := head of projection for expression \(e\)]<span></li>
+      <li>Venetian (<a href="https://benjamins.com/catalog/avt.23.08van" class="ref-link">van Craenenbroeck 2006</a>)<br> \(\mathbf{R}_\mathcal{V}(\text{Topic}, \text{Focus})\; \wedge\)<br>\(\mathbf{R}_\mathcal{V}(\text{Focus}, \text{C})\; \wedge\)<br> \(\mathbf{R}_\mathcal{V}(\text{C}, \text{Topic})\)</li>
+      <li>Imbabura Quechua (<a href="https://udel.edu/~bruening/Downloads/DisjunctiveSelection1.pdf" class="ref-link">Bruening 2019</a>)<br> \(\mathbf{R}_\mathcal{V}(1\text{sg}, \text{Prog})\; \wedge\)<br>\(\mathbf{R}_\mathcal{V}(\text{Mod}_\text{des}, 1\text{sg})\; \wedge\)<br>\(\mathbf{R}_\mathcal{V}(\text{Prog}, \text{Mod}_\text{des})\; \wedge\)<br> \(\mathbf{R}_\mathcal{V}(\text{Mod}_\text{des}, \text{Prog})\) </li>
+    </ul>
+    <p>One could argue away some or even all of the above cases by derivational means (e.g., movement, <a href="http://www.let.rug.nl/zwart/pubs/2009a.htm" class="ref-link">Zwart 2009</a>), but the problem of transitivity is more than counterexamples:</p>
+    <ul>
+    <li>Selection is not a transitive relation.</li>
+    <li><a href="https://linguistics.stonybrook.edu/faculty/richard.larson/files/publications/Larson_2021_Language.pdf" class="ref-link">Larson's (2021)</a> &ldquo;problem of plenitude&rdquo;</li>
+    </ul>
+    <p><i class='far fa-hand-point-right' style="color:#0F52BA;"></i> Either transitivity or the selection-based definition of \(\mathbf{R}\) is wrong.</p>
+    <p><b>2. Totality failure</b></p>
+    <p>Previous concerns about the foundation of cartography mostly target transitivity, but <a href="https://doi.org/10.17863/CAM.44842" class="ref-link">Song (2019)</a> further notices that the totality condition on \(\mathbf{R}\) is also problematic.</p>
+    <p>Some categories belong to the same hierarchy but do not co-occur by design.</p>
+    <ul>
+      <li>&ldquo;Flavored&rdquo; categories like Chomsky&rsquo;s \(v\)/\(v^*\) and <a href="https://www.semanticscholar.org/paper/ON-LITTLE-N%2C-√%2C-AND-TYPES-OF-NOUNS1-Lowenstamm/c51c236b1db86555696c8d96dbcf81e054832b67" class="ref-link">Lowenstamm&rsquo;s (2008)</a> gendered \(n\)s</li>
+      <li>Other complementary categories like Chomsky&rsquo;s T/T<sub>def</sub></li>
+    </ul>
+    <p><i class='far fa-hand-point-right' style="color:#0F52BA;"></i> However \(\mathbf{R}\) is defined, it should have room for <b>incomparable</b> elements:</p>
+    <ul>
+      <li>\(\exists X, Y \in \mathcal{A}, \neg\mathbf{R}_\mathcal{A}(X, Y) \wedge \neg\mathbf{R}_\mathcal{A}(Y, X)\)</li>
+    </ul>
+  </section>
+  <section>
+    <h2>➌ Saving by weakening</h2>
+    <p>Two previous attempts to &ldquo;save&rdquo; cartography by weakening its order relation:</p>
+    <p><b>1. Song (2019): partial order</b><br>
+      <i class='far fa-hand-point-right' style="color:#0F52BA;"></i> reflexive, transitive, antisymmetric</p>
+    <ul>
+      <li>Allowing for incomparable categories</li>
+      <li>A unified defining criterion for all \(\mathbf{R}\)s<br>
+      (based on but crucially isn't selection)</li>
+      <li>Each \(\mathbf{R}\) defined for an entire hierarchy</li>
+      <li><b>Key:</b> derivation vs. ontology</li>
+    </ul>
+    <p><b>2. Larson (2021): total preorder</b><br>
+      <i class='far fa-hand-point-right' style="color:#0F52BA;"></i> reflexive, transitive, total</p>
+    <ul>
+      <li>Allowing for cycles</li>
+      <li>No unified defining criterion for \(\mathbf{R}\)s<br>
+        (also not selection, partly ontological)</li>
+      <li>Each \(\mathbf{R}\) only defined for a local zone</li>
+      <li><b>Key:</b> category ordering <i class="fa-regular fa-arrow-right"></i> feature ordering</li>
+    </ul>
+    <p>The different ways of weakening are due to the authors' different empirical foci (totality vs. transitivity failure). Larson reshapes the classical view more substantially, while Song merely adjusts its individual components.</p>
+    <p><b>Shared merit:</b> freed from &ldquo;selection pitfall&rdquo;<br>
+      <i class="far fa-hand-point-right" style="color:#0F52BA;"></i> <i class="fa-regular fa-square-check"></i> transitivity&nbsp;&nbsp; <i class="fa-regular fa-square-check"></i> reflexivity</p>
+  </section>
+  <section>
+    <h2>➍ A middle-way proposal</h2>
+    <div class="def"><b>Definition 1</b> <span style="color: #3F00FF;">Weak Cartographic Hypothesis</span><br>
+    All functional hierarchies are <i>preorders</i>. Some of them are furthermore total preorders, partial orders, or linear orders.</div>
+    <div class="rem"><b>Remark 1</b> The above definition utilizes the &ldquo;strength&rdquo; relation between order relations:
+      <img src="order-relation-chart.svg" alt="relation between order relations" style="height: 70%; width: auto; margin-left: auto; margin-right: auto; display: block;">
+    <p>R = reflexive, Tr = transitive, To = total, Ant = antisymmetric</p>
+    </div>
+    <div class="def"><b>Definition 2</b> <span style="color: #3F00FF;">Cartographic Relation (\(\sqsubseteq\))</span><br>
+    \(\forall X, Y \in \mathcal{A},\) if \(Y\) <i>functionally selects</i> \(X\) in derivation, then \(X\) <i>can fall in the scope of</i> \(Y\) in the background ontology, written \(X \sqsubseteq Y\). The latter criterion defines functional hierarchies.</div>
+    <div class="rem"><b>Remark 2</b> This ordering criterion is inherited from Song (2019). The binary relation \(\sqsubseteq\) is read &ldquo;has a scope smaller than or equal to.&rdquo; It is clearly reflexive/transtive and also evades the &ldquo;problem of plenitude.&rdquo;</div>
+  </section>
+  <section>
+    <h2>➎ Possible functional hierarchies</h2>
+   <p>The chain (linear order):</p>
+  \[\dots X \rightarrow Y \rightarrow Z \rightarrow W \rightarrow V\dots\]
+   <p>The connected digraph, with incomparable elements (preorder):</p>
+   \[\dots X \rightarrow Y \leftrightarrows Z \rightarrow \{W_1, W_2\} \rightarrow V\dots\]
+   <p>The connected digraph, w/o incomparable elements (total preorder):</p>
+   \[\dots X \rightarrow Y \leftrightarrows Z \rightarrow W \leftrightarrows V\dots\]
+   <p>The DAG (partial order):</p>
+   \[\dots X \rightarrow \{Y_1, Y_2, Y_3\} \rightarrow Z \rightarrow \{W_1, W_2\} \rightarrow V\dots\]
+   <div class="rem"><b>Remark 3</b> Functional (sub)hierarchies are typically chains, especially if we take into account the subtle differences between iterable categories (e.g., the multiple Topic heads). Hence, the classical view is fine in many or even most cases, and linguists whose immediate concerns are order-theoretically nonexceptional (i.e., no incomparable categories or cycles) may conveniently stick to classical cartography.</div>
+  </section>
+  <section>
+    <h2>➏ Bigger picture</h2>
+    <p>The middle-way proposal can be extended from individual hierarchies to the entire functional category inventory. Consider two hierarchies defined by \(\mathbf{R}_\mathcal{A}\) and  \(\mathbf{R}_\mathcal{B}\):</p>
+    \[\mathcal{A}: \dots X \rightarrow \{Y_1, Y_2\} \rightarrow Z \rightarrow W\dots\]
+    \[\mathcal{B}: \dots X \leftrightarrows Y \rightarrow Z \rightarrow W\dots \]
+    <p>The two combined is still a preorder and may be viewed as a &ldquo;superhierarchy.&rdquo; One may also study the formal relations (e.g., monotone functions) across such hierarchies. Song (2019) explores such metatheoretical issues with the aid of mathematical category theory.</p>
+  </section>
+  <section>
+    <h2>➐ Remaining issues</h2>
+    <p>For future research:</p>
+    <ul>
+    <li>The weakest hierarchy in ➎ is actually not a fully general preorder but a <i>directed</i> one. So, <b>Definition 1</b> may need adjustment.</li>
+    <li>If it turns out that <b>all</b> cases of transitivity failure can be argued away derivationally, then no cycles occur, and we end up with just partial orders (as in Song 2019).</li>
+    <li>If so, we can further explore the specific shape of directedness in ➎ and potentially give cartographic hierarchies an upgraded, lattice-theoretic foundation.</li>
+    </ul>
+  </section>
+</main>
+  </body>
+</html>
