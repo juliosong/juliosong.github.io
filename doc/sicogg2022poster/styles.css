@@ -1,6 +1,6 @@
 /* Layout styles -----------------------------------*/
 
-@media (max-width: 619px) {
+@media (max-width: 749px) {
   .qrcode1 {
     display: none;
   }
@@ -13,7 +13,7 @@
   }
 }
 
-@media (min-width: 620px) {
+@media (min-width: 750px) {
   main {
     column-count: 2;
     column-gap: 25px;
@@ -37,7 +37,7 @@
 
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1150px) {
   main {
      column-count: 3;
      column-rule: 2px solid var(--frame);
