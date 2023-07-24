@@ -22,6 +22,13 @@ ul {
   padding-left: 10px;
   list-style-type: square; }
 
+.sublist {
+  list-style-type: circle; }
+
+.full-page {
+  height: 100vh;
+  padding: 20% 0; }
+
 .publication li, .projects li, .misc li {
   margin: 10px 0; }
 
@@ -48,6 +55,8 @@ h3 {
   line-height: 40px; }
 
 h4 {
+  margin: 10px 0;
+  padding: 8px 0;
   font-size: 1rem; }
 
 /* footer */
@@ -204,6 +213,20 @@ nav ul {
   .note > a {
     font-size: 0.9rem; }
 
+/* my image */
+#myImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px; }
+
+/* image caption */
+figcaption {
+  text-align: center; }
+
 /* mobile & default & iPhone SE */
 /* put this fallback stylesheet outside any media query, or Microsoft Edge does not display correctly*/
 body {
@@ -249,6 +272,15 @@ nav ul {
     font: bold 13px "Red Hat Display", arial, helvetica, sans-serif;
     display: block;
     padding: 5px 10px; }
+
+/* embedded youtube video */
+.youtube-video {
+  aspect-ratio: 16/9;
+  width: 100%; }
+
+/* my image */
+#myImg {
+  width: 100%; }
 
 /* mobile & iPhone 8 */
 @media screen and (min-width: 341px) and (max-width: 666px) {
@@ -296,9 +328,18 @@ nav ul {
     .nav-button a {
       font: bold 13px "Red Hat Display", arial, helvetica, sans-serif;
       display: block;
-      padding: 5px 10px; } }
+      padding: 5px 10px; }
+
+  /* embedded youtube video */
+  .youtube-video {
+    aspect-ratio: 16/9;
+    width: 100%; }
+
+  /* my image */
+  #myImg {
+    width: 100%; } }
 /* tablet small */
-/* only settings different from the mobile mode needs specifying */
+/* only settings different from the mobile mode need specifying */
 /* use @import instead of @use because Ruby Sass does not support the latter yet (currently only Dart Sass supports @use) */
 @media screen and (min-width: 667px) and (max-width: 749px) {
   /* Base styling for two tablet modes. */
@@ -375,7 +416,16 @@ nav ul {
 
   nav {
     grid-area: nav;
-    align-self: start; } }
+    align-self: start; }
+
+  /* embedded youtube video */
+  .youtube-video {
+    width: 560px;
+    height: 315px; }
+
+  /* 100% modal image width on smaller screens */
+  .modal-content {
+    width: 100%; } }
 /* tablet large */
 @media only screen and (min-width: 750px) and (max-width: 1024px) {
   /* Base styling for two tablet modes. */
@@ -466,7 +516,16 @@ nav ul {
 
   /* footer */
   footer li {
-    display: inline-block; } }
+    display: inline-block; }
+
+  /* embedded youtube video */
+  .youtube-video {
+    width: 560px;
+    height: 315px; }
+
+  /* my image */
+  #myImg {
+    width: 70%; } }
 /* computer */
 @media screen and (min-width: 1025px) {
   /* overall (body, paragraph, link, list) */
@@ -570,7 +629,16 @@ nav ul {
       font: bold 15px "Red Hat Display", arial, helvetica, sans-serif;
       display: inline-block;
       margin: 0;
-      padding: 7px 20px; } }
+      padding: 7px 20px; }
+
+  /* embedded youtube video */
+  .youtube-video {
+    width: 560px;
+    height: 315px; }
+
+  /* my image */
+  #myImg {
+    width: 70%; } }
 /* IE */
 @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* overall (body, paragraph, list, link) */
@@ -638,6 +706,15 @@ nav ul {
   footer {
     margin-left: 0; }
     footer li {
-      display: inline-block; } }
+      display: inline-block; }
+
+  /* embedded youtube video */
+  .youtube-video {
+    width: 560px;
+    height: 315px; }
+
+  /* my image */
+  #myImg {
+    width: 70%; } }
 
 /*# sourceMappingURL=stylesheet.css.map */

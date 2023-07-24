@@ -60,6 +60,18 @@ nav ul {
 	}
 }
 
+/* embedded youtube video */
+.youtube-video {
+    aspect-ratio: 16/9;
+    width: 100%;
+}
+
+/* my image */
+#myImg {
+  width: 100%;
+}
+
+
 /* mobile & iPhone 8 */
 @media screen and (min-width: 341px) and (max-width: 666px) {
 	/* overall (body, paragraph, link, list) */
@@ -121,14 +133,37 @@ nav ul {
 	    padding: 5px 10px;
 	  }
 	}
+    
+    /* embedded youtube video */
+    .youtube-video {
+      aspect-ratio: 16/9;
+      width: 100%;
+    }
+    
+    /* my image */
+    #myImg {
+      width: 100%;
+    }
+
 }
 
 
 /* tablet small */
-/* only settings different from the mobile mode needs specifying */
+/* only settings different from the mobile mode need specifying */
 /* use @import instead of @use because Ruby Sass does not support the latter yet (currently only Dart Sass supports @use) */
 @media screen and (min-width: 667px) and (max-width: 749px) {
 	@import 'tablet-base';
+    
+    /* embedded youtube video */
+    .youtube-video {
+      width: 560px;
+      height: 315px;
+    }
+    
+    /* 100% modal image width on smaller screens */
+    .modal-content {
+    width: 100%;
+    }
 }
 
 /* tablet large */
@@ -152,6 +187,17 @@ nav ul {
 			display: inline-block;
 		}
 	}
+    
+    /* embedded youtube video */
+    .youtube-video {
+      width: 560px;
+      height: 315px;
+    }
+    
+    /* my image */
+    #myImg {
+      width: 70%;
+    }
 }
 
 /* computer */
@@ -283,6 +329,17 @@ nav ul {
 	    padding: 7px 20px;
 		}
 	}
+    
+    /* embedded youtube video */
+    .youtube-video {
+      width: 560px;
+      height: 315px;
+    }
+    
+    /* my image */
+    #myImg {
+      width: 70%;
+    }
 }
 
 
@@ -369,4 +426,15 @@ nav ul {
 			display: inline-block;
 		}
 	}
+    
+    /* embedded youtube video */
+    .youtube-video {
+      width: 560px;
+      height: 315px;
+    }
+    
+    /* my image */
+    #myImg {
+      width: 70%;
+    }
 }

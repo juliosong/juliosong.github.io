@@ -37,6 +37,15 @@ ul {
   list-style-type: square;
 }
 
+.sublist {
+    list-style-type: circle;
+}
+
+.full-page {
+    height: 100vh;
+    padding: 20% 0;
+}
+
 .publication, .projects, .misc {
   li {
       margin: 10px 0;
@@ -70,6 +79,8 @@ h3 {
 }
 
 h4 {
+    margin: 10px 0;
+    padding: 8px 0;
     font-size: $p-size;
 }
 
@@ -247,3 +258,20 @@ nav ul {
       font-size: 0.9rem;
     }
 }
+
+/* my image */
+#myImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* image caption */
+figcaption {
+  text-align: center;
+}
+
