@@ -267,43 +267,6 @@ figcaption {
   color: #fff;
   top: 5px; }
 
-/* hamburger menu */
-.dropdown {
-  position: relative;
-  display: inline-block; }
-
-#hamlabel {
-  background: rgba(73, 122, 255, 0.8);
-  color: #fff;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  position: fixed;
-  top: 13px;
-  right: 5px;
-  font-size: 35px; }
-
-.dropdown-content {
-  display: none;
-  position: fixed;
-  top: 25px;
-  right: 46px;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1; }
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block; }
-
-#ham-toggle:checked ~ .dropdown-content {
-  display: block; }
-
-.visually-hidden {
-  opacity: 0; }
-
 /* mobile & default & iPhone SE */
 /* put this fallback stylesheet outside any media query, or Microsoft Edge does not display correctly*/
 body {
@@ -715,11 +678,7 @@ nav ul {
 
   /* my image */
   #myImg {
-    width: 70%; }
-
-  /* hamburger menu */
-  .dropdown {
-    display: none; } }
+    width: 70%; } }
 /* IE */
 @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* overall (body, paragraph, list, link) */
@@ -796,10 +755,6 @@ nav ul {
 
   /* my image */
   #myImg {
-    width: 70%; }
-
-  /* hamburger menu */
-  .dropdown {
-    display: none; } }
+    width: 70%; } }
 
 /*# sourceMappingURL=stylesheet.css.map */
