@@ -268,50 +268,25 @@ figcaption {
   top: 5px; }
 
 /* hamburger menu */
-.dropbtn {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background-color: rgba(73, 122, 255, 0.8);
-  color: white;
-  width: 40px;
-  height: 40px;
-  font-size: 30px;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  display: none;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
-
-.dropbtn span {
-  color: #fff;
-  margin: 0;
-  position: relative;
-  left: 0px;
-  top: -1px;
-  font-size: 30px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
-
 .dropdown {
   position: relative;
   display: inline-block; }
+
+#hamlabel {
+  background: rgba(73, 122, 255, 0.8);
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  position: fixed;
+  top: 13px;
+  right: 5px;
+  font-size: 35px; }
 
 .dropdown-content {
   display: none;
   position: fixed;
   top: 25px;
-  right: 60px;
+  right: 46px;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -323,20 +298,11 @@ figcaption {
   text-decoration: none;
   display: block; }
 
-.dropdown-content a:hover {
-  background-color: #f1f1f1; }
-
-.dropdown:hover .dropdown-content {
+#ham-toggle:checked ~ .dropdown-content {
   display: block; }
 
-.dropdown:hover .dropbtn {
-  background-color: #497aff; }
-
-.dropdown:hover span {
-  color: #fff;
-  left: 0px;
-  top: -3px;
-  font-size: 35px; }
+.visually-hidden {
+  opacity: 0; }
 
 /* mobile & default & iPhone SE */
 /* put this fallback stylesheet outside any media query, or Microsoft Edge does not display correctly*/
