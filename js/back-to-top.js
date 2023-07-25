@@ -6,8 +6,9 @@ $(window).scroll(function() {
     }
 });
 
-$('#return-to-top').click(function() {      // When arrow is clicked
-    $('body,html').animate({
-        scrollTop : 0                       // Scroll to top of body
-    }, 500);
-});
+// The following click() function does not work as such for some unknown reason, so I had to rewrite it as an onclick() event on the #return-to-top <a> element itself within the html file instead.
+// $('#return-to-top').click(function() {      // When arrow is clicked
+//     $('body,html').animate({
+//         scrollTop : 0                       // Scroll to top of body
+//     }, 500);
+// });

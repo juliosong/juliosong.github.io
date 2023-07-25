@@ -308,7 +308,11 @@
       </footer>
     </div>
     
-    <a href="#" id="return-to-top"> 🔝 </a>
+    <a href="#" id="return-to-top" onclick="toTop()"> 🔝 </a>
+    <script>
+    function toTop() {$('body,html').animate({scrollTop : 0}, 500);}
+    </script>
+    <!-- For some unknown reason, the onclick() method of jQuery does not work from a separate .js file, so I had to explicitly write it as a function on the <a> element itself -->
 
   </body>
 </html>
