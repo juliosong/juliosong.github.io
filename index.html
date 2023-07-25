@@ -9,15 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel='stylesheet' href='scss/stylesheet.css' />
-    <link href="bigfoot/dist/bigfoot-default.css" rel="stylesheet" type="text/css">
+
     <!-- icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
-  	<script type="text/javascript" src="bigfoot/dist/jquery-1.8.3.min.js"></script>
-  	<script type="text/javascript" src="bigfoot/dist/bigfoot.js"></script>
-  	<script type="text/javascript">
-  		$.bigfoot()
-  	</script>
+  	<script type="text/javascript" src="js/jquery-3.7.0.min.js"></script>
+  	<script type="text/javascript" src="js/back-to-top.js"></script>
+  	<script type="text/javascript" src="js/hamburger-menu.js"></script>
   </head>
 
   <body><a id="top"></a>
@@ -50,15 +48,28 @@
               <!--<li class="blue nav-button"> <a href="#contact">Contact</a> </li>-->
             </ul>
           </nav>
+          
         </header>
 
       <main>
+        <!-- hamburger dropdown menu for smaller screens -->
+        <div class="dropdown" style="float:right;">
+          <button class="dropbtn"> <span>꠵</span> </button>
+          <div class="dropdown-content">
+            <a href="#bio">Introduction</a>
+            <a href="#research">Research</a>
+            <a href="#projects">Projects</a>
+            <a href="#publication">Publications</a>
+            <a href="#misc">Miscellany</a>
+          </div>
+        </div>
+        <!-- news -->
         <div class="news"><a id="news"></a>
           <h4>News</h4>
           <p>[7/20/2023] <a href="#clch">Lesson 3</a> of my Classical Chinese Grammar series is online now.</p>
         </div>
         <section class="bio">
-          <h3 id="bio"><i class="fas fa-id-card"></i>Introduction<a href="#top"></a> </h3>
+          <h3 id="bio"><i class="fas fa-id-card"></i>Introduction<a href="#"></a> </h3>
           <div class="bio-img">
             <img src="img/profile.jpg" alt="This is a profile picture.">
             <p>I am a theoretical linguist currently working as a &ldquo;Hundred Talents Program&rdquo; researcher at Zhejiang University (Hangzhou, China). Before taking up my current position (May 2020), I studied at the University of Cambridge (Gonville & Caius College), from where I received my PhD degree in Linguistics (Oct. 2019). Before Cambridge, I had studied at Beijing Foreign Studies University (majoring in Hungarian). I am curious about all aspects of human language and am particularly fascinated by its syntactic module. I mainly work within the theoretical framework of Noam Chomsky's transformational generative grammar but am open-minded about other frameworks too. I enjoy learning new perspectives and am always happy to observe how different theories converge. I also actively explore interdisciplinary directions in my research and endeavor to seek common ground across paradigms.</p>
@@ -67,7 +78,7 @@
 
         <section class="research">
           <a id="research"></a>
-          <h3><i class="fas fa-user-graduate"></i>Research<a href="#top"><sup><i class="fas fa-hand-point-up"></i></sup></a></h3>
+          <h3><i class="fas fa-user-graduate"></i>Research<a href="#"><sup><i class="fas fa-hand-point-up"></i></sup></a></h3>
           <p>My main research area is <b>syntax</b> (and its interfaces with morphology/semantics). I do both synchronic and diachronic research and am particularly interested in <b>understudied Chinese varieties</b>, many of which are also endangered. I have worked on the following Chinese varieties either directly or indirectly (e.g., via supervising student projects):</p>
           <ul>
             <li><span class="key">Mandarin</span>: Standard Mandarin, Dongying Mandarin, Sichuan/Chongqing Mandarin</li>
@@ -102,7 +113,7 @@
 
         <section class="projects">
           <a id="projects"></a>
-          <h3><i class="fas fa-user-graduate"></i>Projects<a href="#top"><sup><i class="fas fa-hand-point-up"></i></sup></a></h3>
+          <h3><i class="fas fa-user-graduate"></i>Projects<a href="#"><sup><i class="fas fa-hand-point-up"></i></sup></a></h3>
           <h4 id="ongoing">In progress<a href="#projects"></a></h4>
           <ul>
             <li><span class="key">Categorical linguistics (linguistics + mathematics), since 2019 </span><br> Applying category theory to theoretical linguistics, with a focus on the big picture and general directions [<a href="https://www.youtube.com/watch?v=mgS5ePNtHGk" target="_blank">a glimpse</a>] </li>
@@ -131,7 +142,7 @@
 
         <!--<section class="teaching">
           <a id="teaching"></a>
-          <h3><i class="fas fa-chalkboard-teacher"></i>Teaching<a href="#top"><sup><i class="fas fa-hand-point-up"></i></sup></a></h3>
+          <h3><i class="fas fa-chalkboard-teacher"></i>Teaching<a href="#"><sup><i class="fas fa-hand-point-up"></i></sup></a></h3>
           <p>2019. <a href="https://t.viax.org" target=“_blank”>ViaX</a> one-on-one tutoring (high school student). Syntax.<br><span class="note">In this 20-hour online course I taught a Chinese high school student the basics of generative syntax and guided them to produce an 8000-word research paper on discourse factors involved in the distribution of null subjects in Mandarin Chinese. The course and the paper were both in English. The paper got accepted into the International Conference on Foreign Language Education and Linguistics (FLEL 2019) as an oral presentation and was subsequently published in <i>Open Journal of Social Sciences</i>. </span> </p>
           <p>2017–2018. Cambridge undergraduate supervision (second-year students). Li9: Syntax.<br><span class="note">From <a href="https://www.undergraduate.study.cam.ac.uk/courses/how-will-i-be-taught" target=“_blank”>University website</a>: &#8220;Supervisions are small-group sessions ... with a supervisor (an academic) .... This system of personal tuition is one of Cambridge’s greatest strengths. Supervisions provide the opportunity to explore your subject more deeply, discuss your own work and ideas, and receive regular feedback.&#8221;</span></p>
           <p>2016–2017. Cambridge undergraduate supervision (first-year students). Li2: Structure and Meaning.</p>
@@ -139,7 +150,7 @@
 
         <section class="publication">
           <a id="publication" ></a>
-          <h3><i class="fas fa-book-open"></i>Selected publications<a href="#top"><sup><i class="fas fa-hand-point-up"></i></sup></a> </h3>
+          <h3><i class="fas fa-book-open"></i>Selected publications<a href="#"><sup><i class="fas fa-hand-point-up"></i></sup></a> </h3>
           <!--<p style="margin-bottom: 0;">Below is a list of my academic publications:</p>-->
           <p style="margin-top:0;"><a href="#ms">most recent</a> | <a href="#journal">journal</a> | <a href="#volume">edited volume</a> | <a href="#conf">conference</a> | <a href="#synlab">departmental</a> | <!--<a href="#invited">invited</a> |--><a href="#general">general audience</a> </p>
           <h4 id="ms">Most recent<a href="#publication"><sup><i class="fas fa-hand-point-up"></i></sup></a></h4>
@@ -195,9 +206,9 @@
           <h4 id="general">General audience<a href="#publication"><sup><i class="fas fa-hand-point-up"></i></sup></a></h4>
           <ul>
             <li>2023. Response to <i>Notes and queries</i> &ldquo;What languages do native speakers of Mandarin and Arabic find the hardest to learn?&rdquo; <a href="https://www.theguardian.com/lifeandstyle/2023/jul/09/readers-reply-what-languages-do-native-speakers-of-mandarin-and-arabic-find-the-hardest-to-learn" target="_blank">The Guardian</a>. Jul. 9. <!--[<a href="doc/Song2017CaiusSym.pdf" target=“_blank”>slides</a>]--></li>
-            <li>2017. From <i>bedtime</i> to <i>spacetime</i>&thinsp;: The hidden language behind compound words. Talk at Gonville &amp; Caius Graduate Research Symposium. Oct. 22. <!--[<a href="doc/Song2017CaiusSym.pdf" target=“_blank”>slides</a>]--></li>
+            <li>2017. From <i>bedtime</i> to <i>spacetime</i>&thinsp;: The hidden language behind compound words. Talk at the Gonville &amp; Caius Graduate Research Symposium. Oct. 22. <!--[<a href="doc/Song2017CaiusSym.pdf" target=“_blank”>slides</a>]--></li>
             <li>2017. Universal Grammar and where to find it. Gonville &amp; Caius MCR/SCR talk.<!--<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>--> May 30. <!--[<a href="doc/Song2017CaiusMCR.pdf" target=“_blank”>slides</a>][<a href="http://talks.cam.ac.uk/talk/index/71293" target=“_blank”>archive</a>]--></li>
-            <li>2016. Event and its aspects: How do different languages talk about events with their verbs? Talk at Cambridge Festival of Ideas Linguistics Day. Oct. 22. <!--[<a href="doc/Song2016FoI.pdf" target=“_blank”>slides</a>]--></li>
+            <li>2016. Event and its aspects: How do different languages talk about events with their verbs? Talk at the Cambridge Festival of Ideas (Linguistics Day). Oct. 22. <!--[<a href="doc/Song2016FoI.pdf" target=“_blank”>slides</a>]--></li>
             <!--<li>2016. On the edge of verb shell: What makes complex verbs so versatile? Gonville &amp; Caius Graduate Research Symposium ("Caius to the Future"). May 8. [<a href="doc/Song2016CaiusFut.pdf" target=“_blank”>poster</a>]<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup></li>-->
           </ul>
           <!--<h4 id="others">Others<a href="#publication"><sup><i class="fas fa-hand-point-up"></i></sup></a></h4>
@@ -209,12 +220,12 @@
 
         <section class="misc">
           <a id="misc"></a>
-          <h3><i class="fas fa-palette"></i>Miscellany<a href="#top"><sup><i class="fas fa-hand-point-up"></i></sup></a></h3>
+          <h3><i class="fas fa-palette"></i>Miscellany<a href="#"><sup><i class="fas fa-hand-point-up"></i></sup></a></h3>
           <p style="margin-top:0;">
           <a href="#blogpost">blog</a> | <a href="#film">multimedia</a> | <a href="#rg">reading groups</a> | <a href="#hobby">hobbies</a> 
           </p>
           <h4 id="blogpost">Blog<a href="#misc"><sup><i class="fas fa-hand-point-up"></i></sup></a></h4>
-          <p>I run my own blog named <a href="https://blog.juliosong.com/about/" target="_blank">I-Yuwen</a> and like posting articles about language and linguistics (especially in relation to Chinese) on it when I have time. I sometimes post stuff about mathematics too, mainly about category theory. Blogging is a good way to develop general writing skills, and below is a selection of my posts.</p>
+          <p>I run my own blog named <a href="https://blog.juliosong.com/about/" target="_blank">I-Yuwen</a> and like posting articles about language and linguistics (especially in relation to Chinese) on it when I have time. I sometimes post stuff about mathematics too, mainly about category theory. Below is a selection of my posts:</p>
           <ul>
             <li>Sep. 2021. <a href="https://blog.juliosong.com/linguistics/programming/classical-chinese-and-programming/" target="_blank">Classical Chinese and programming</a></li>
             <!--<li>Aug. 2021. <a href="https://blog.juliosong.com/life/linguistics/unusual-pronunciation-in-singing/" target="_blank">Unusual pronunciations in pop songs</a></li>-->
@@ -239,19 +250,18 @@
           <h4 id="film">Multimedia<a href="#misc"><sup><i class="fas fa-hand-point-up"></i></sup></a></h4>
           <p>I have a <a href="https://youtube.com/@juliosong9851" target=“_blank”>YouTube channel</a> and occasionally upload original videos to it about my professional or personal studies. All my videos and related materials are freely available, but if you want to buy me a coffee (either in person or <a href="https://bmc.link/juliosong9P" target="_blank">online</a>) I will happily accept it too. ;-) </p>
           <ul>
-            <li>Most watched (as of July 2023):</li>
+            <li>Most watched:</li>
             <iframe class="youtube-video" src="https://www.youtube.com/embed/dzEPH8K4CaQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <li>Active series:</li>
               <ul class="sublist">
                 <li>
-                Classical Chinese Grammar (a self-study tutorial) [<a href="https://youtube.com/playlist?list=PLAophbkcQOaUlu51vv0woyaoviNvBCx27" target="_blank">link to playlist</a>]<br/>
-                [PDF notes: <a href="doc/Classical-Chinese-Grammar/classical-chinese-grammar-lesson-1-notes.pdf" target="_blank">Lesson 1</a>, <a href="doc/Classical-Chinese-Grammar/classical-chinese-grammar-lesson-2-notes.pdf" target="_blank">Lesson 2</a>, <a id="clch" href="doc/Classical-Chinese-Grammar/classical-chinese-grammar-lesson-3-notes.pdf" target="_blank">Lesson 3</a> <span class="label">New</span> ]<br/>
-                [Answer key to exercises: <a href="doc/Classical-Chinese-Grammar/classical-chinese-grammar-key-1-2.pdf" target="_blank">L1–2</a>]</li>
-                <!--<br/>
-                <span id="clch" style="padding:10px 0;">🎬 Latest episode ⬇️</span> <span class="label">New</span>
+                Classical Chinese Grammar (a self-study tutorial) [<a href="https://youtube.com/playlist?list=PLAophbkcQOaUlu51vv0woyaoviNvBCx27" target="_blank">playlist</a>]<br/>
+                <span id="clch" style="padding:10px 0;">🎬 <b>Latest episode</b> ⬇️</span> <span class="label">New</span></br>
+                <iframe class="youtube-video" src="https://www.youtube.com/embed/xdoq8Bsv5HE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></br>
+                [PDF notes: <a href="doc/Classical-Chinese-Grammar/classical-chinese-grammar-lesson-1-notes.pdf" target="_blank">Lesson 1</a>, <a href="doc/Classical-Chinese-Grammar/classical-chinese-grammar-lesson-2-notes.pdf" target="_blank">Lesson 2</a>, <a id="clch" href="doc/Classical-Chinese-Grammar/classical-chinese-grammar-lesson-3-notes.pdf" target="_blank">Lesson 3</a>]<br/>
+                [Answer key to exercises: <a href="doc/Classical-Chinese-Grammar/classical-chinese-grammar-key-1-2.pdf" target="_blank">L1–2</a>]
                 </li>
-                <iframe class="youtube-video" src="https://www.youtube.com/embed/xdoq8Bsv5HE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
-                <li>Chinese Characters (supplementary to the Classical Chinese Grammar series) [<a href="https://youtube.com/playlist?list=PLAophbkcQOaXECQrxbfnSZQmQqgEaw-Xt" target="_blank">link to playlist</a>]
+                <li>Chinese Characters (supplementary to the Classical Chinese Grammar series) [<a href="https://youtube.com/playlist?list=PLAophbkcQOaXECQrxbfnSZQmQqgEaw-Xt" target="_blank">playlist</a>]
                 <!--<br/>
                 🎬 Latest episode ⬇️
                 </li>
@@ -260,7 +270,8 @@
           </ul>
           <p>In the past, I have contributed to the creation of a short film on the multimodal nature of human language:</p>
           <ul>
-            <li>2016 (with Craig Pearson and Toby Smith). <em>Talk with Your Hands: Communicating across the Sensory Spectrum.</em> Short film made for Cambridge Festival of Ideas. [<a href="https://www.youtube.com/watch?v=OzvNOxSBWbo" target=“_blank”>video</a>][<a href="https://www.cam.ac.uk/research/news/talk-with-your-hands-a-cambridge-shorts-film" target=“_blank”>news</a>]</li>
+            <li>2016 (with Craig Pearson and Toby Smith). <em>Talk with Your Hands: Communicating across the Sensory Spectrum.</em> Short film made for the <a href="https://www.cam.ac.uk/research/news/talk-with-your-hands-a-cambridge-shorts-film" target=“_blank”>Cambridge Festival of Ideas</a>.</li>
+            <iframe class="youtube-video" src="https://www.youtube.com/embed/OzvNOxSBWbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </ul>
           <!--<h4 id="analyzer">Morphological analyzer<a href="#misc"><sup><i class="fas fa-hand-point-up"></i></sup></a></h4>
           <p>I attended the 2016 San Sebasti&aacute;n summer lab &#8220;Codefest&#8221; and developed a morphological analyzer for Hungarian, which can automatically analyze the morphosemantic components of inflected words and generate orthographically correct words based on abstract linguistic representations. [<a href="https://github.com/juliosong/Hungarian-morphological-analyzer.git" target="_blank">code</a>] </p>-->
@@ -295,7 +306,7 @@
 
         <!--<section class="contact">
           <a id="contact"></a>
-          <h3><i class="fas fa-paper-plane"></i>Contact<a href="#top"><sup><i class="fas fa-hand-point-up"></i></sup></a> </h3>
+          <h3><i class="fas fa-paper-plane"></i>Contact<a href="#"><sup><i class="fas fa-hand-point-up"></i></sup></a> </h3>
           <p>You can contact me via email<sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup> or find me on <a href="https://twitter.com/JulioSongC" target=“_blank”>Twitter</a>. </p><br>
         </section>-->
       </main>
@@ -303,11 +314,13 @@
       <footer>
         <ul>
           <li>&copy;2019–2023 Chenchen Song&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-          <li><a href="sitemap.xml">[site map]</a> &nbsp;&nbsp; <a href="#top">[top<sup>&#8593;</sup>]</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-          <li style="color:red;">Last updated: Jul. 24, 2023</li>
+          <li><a href="sitemap.xml">[site map]</a> &nbsp;&nbsp; <a href="#">[top<sup>&#8593;</sup>]</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+          <li style="color:red;">Last updated: Jul. 25, 2023</li>
         </ul>
       </footer>
     </div>
+    
+    <a href="#" id="return-to-top"> <span>⇧</span> </a>
 
   </body>
 </html>

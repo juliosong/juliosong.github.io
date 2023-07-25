@@ -198,6 +198,7 @@ nav ul {
     #myImg {
       width: 70%;
     }
+    
 }
 
 /* computer */
@@ -340,6 +341,11 @@ nav ul {
     #myImg {
       width: 70%;
     }
+    
+    /* hamburger menu */
+    .dropdown {
+      display:none;
+    }
 }
 
 
@@ -436,5 +442,10 @@ nav ul {
     /* my image */
     #myImg {
       width: 70%;
+    }
+    
+    /* hamburger menu */
+    .dropdown {
+      display:none;
     }
 }
